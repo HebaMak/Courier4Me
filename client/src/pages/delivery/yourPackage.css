@@ -1,0 +1,314 @@
+.ur_package_page {
+  background: linear-gradient(
+      to right,
+      rgba(255, 255, 255, 0),
+      rgba(255, 255, 255, 0.9)
+    ),
+    url("https://res.cloudinary.com/hapiii/image/upload/v1674341422/HYF/graduation%20project/gjioq2zwehzmnjtocqsk.jpg")
+      no-repeat;
+  background-size: cover;
+  height: calc(100vh-80px);
+  overflow: hidden;
+}
+.ur_package_page .content {
+  width: 60%;
+  margin-left: 40%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  margin-bottom: 50px;
+  overflow-x: hidden;
+  height: 100vh;
+}
+.ur_package_page .content h1 {
+  text-align: center;
+  position: relative;
+  margin: 50px auto;
+  text-transform: capitalize;
+  width: 70%;
+}
+.ur_package_page .content h1:after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 2px;
+  width: 100px;
+  background-color: var(--orange-color);
+  bottom: -10px;
+}
+.ur_package_page .content .success_msg {
+  text-align: center;
+  background-color: var(--olive-color);
+  color: #fff;
+  padding: 30px;
+  width: 70%;
+  margin: auto;
+  text-transform: capitalize;
+  outline: 3px solid var(--olive-color);
+  border: 1px solid #fff;
+}
+.ur_package_page .content .delivery_data {
+  width: 70%;
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+.ur_package_page .content .delivery_data .data_title {
+  font-weight: bold;
+  border-bottom: 1px solid var(--light-gray);
+  border-right: 1px solid var(--light-gray);
+  background-color: rgba(238, 238, 238, 0.394);
+  margin-bottom: 7px;
+  padding: 10px 20px;
+  color: var(--dark-color);
+  text-transform: capitalize;
+}
+.ur_package_page .content .delivery_data .data_title span {
+  font-weight: normal;
+  margin-left: 10px;
+}
+.ur_package_page .content span.mail {
+  text-transform: none;
+}
+.ur_package_page .content .request_container {
+  width: 70%;
+  margin: auto;
+}
+.ur_package_page .content .request_container h5 {
+  margin-bottom: 30px;
+}
+
+/* media query */
+@media (max-width: 300px) {
+  .ur_package_page {
+    background: linear-gradient(
+        rgba(255, 255, 255, 0.7),
+        rgba(255, 255, 255, 0.7)
+      ),
+      url("https://res.cloudinary.com/hapiii/image/upload/v1674419880/HYF/graduation%20project/mqdwgt810mlfvdpaiid8.jpg")
+        no-repeat;
+  }
+  .ur_package_page .content {
+    width: 100%;
+    margin-left: 0%;
+    padding-top: 30px;
+    padding-bottom: 50px;
+    margin-bottom: 50px;
+  }
+  .ur_package_page .content h1 {
+    margin: 40px auto;
+    width: 90%;
+    font-size: 24px;
+  }
+  .ur_package_page .content h1:after {
+    width: 70px;
+  }
+  .ur_package_page .content .success_msg {
+    width: 90%;
+    font-size: 20px;
+    line-height: 1.5;
+    font-weight: 500;
+  }
+  .ur_package_page .content .delivery_data {
+    width: 90%;
+  }
+  .ur_package_page .content .delivery_data .data_title {
+    font-weight: bold;
+    border-bottom: 1px solid var(--light-gray);
+    border-right: 1px solid var(--light-gray);
+    background-color: rgba(238, 238, 238, 0.394);
+    margin-bottom: 7px;
+    padding: 10px;
+    color: var(--dark-color);
+    text-transform: capitalize;
+  }
+  .ur_package_page .content .request_container {
+    width: 90%;
+    text-align: center;
+  }
+  .ur_package_page .content .request_container h5 {
+    margin-top: 30px;
+  }
+}
+
+@media (min-width: 301px) and (max-width: 575px) {
+  .ur_package_page {
+    background: linear-gradient(
+        rgba(255, 255, 255, 0.7),
+        rgba(255, 255, 255, 0.7)
+      ),
+      url("https://res.cloudinary.com/hapiii/image/upload/v1674419880/HYF/graduation%20project/mqdwgt810mlfvdpaiid8.jpg")
+        no-repeat;
+    background-size: cover;
+  }
+  .ur_package_page .content {
+    width: 100%;
+    margin-left: 0%;
+    padding-top: 30px;
+    padding-bottom: 50px;
+    margin-bottom: 50px;
+  }
+  .ur_package_page .content h1 {
+    margin: 40px auto;
+    width: 90%;
+    font-size: 26px;
+  }
+  .ur_package_page .content h1:after {
+    width: 70px;
+  }
+  .ur_package_page .content .success_msg {
+    width: 90%;
+    font-size: 22px;
+    line-height: 1.5;
+    font-weight: 500;
+  }
+  .ur_package_page .content .delivery_data {
+    width: 90%;
+  }
+  .ur_package_page .content .delivery_data .data_title {
+    font-weight: bold;
+    border-bottom: 1px solid var(--light-gray);
+    border-right: 1px solid var(--light-gray);
+    background-color: rgba(238, 238, 238, 0.394);
+    margin-bottom: 7px;
+    padding: 10px;
+    color: var(--dark-color);
+    text-transform: capitalize;
+  }
+  .ur_package_page .content .request_container {
+    width: 90%;
+    text-align: center;
+  }
+  .ur_package_page .content .request_container h5 {
+    margin-top: 30px;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 765px) {
+  .ur_package_page {
+    background: linear-gradient(
+        rgba(255, 255, 255, 0.7),
+        rgba(255, 255, 255, 0.7)
+      ),
+      url("https://res.cloudinary.com/hapiii/image/upload/v1674419880/HYF/graduation%20project/mqdwgt810mlfvdpaiid8.jpg")
+        no-repeat;
+    background-size: cover;
+  }
+  .ur_package_page .content {
+    width: 100%;
+    margin-left: 0%;
+    padding-top: 30px;
+    padding-bottom: 50px;
+    margin-bottom: 50px;
+  }
+  .ur_package_page .content h1 {
+    margin: 40px auto;
+    width: 90%;
+    font-size: 28px;
+  }
+  .ur_package_page .content h1:after {
+    width: 80px;
+  }
+  .ur_package_page .content .success_msg {
+    width: 80%;
+    font-size: 24px;
+    line-height: 1.5;
+    font-weight: 500;
+  }
+  .ur_package_page .content .delivery_data {
+    width: 80%;
+  }
+  .ur_package_page .content .delivery_data .data_title {
+    font-weight: bold;
+    border-bottom: 1px solid var(--light-gray);
+    border-right: 1px solid var(--light-gray);
+    background-color: rgba(238, 238, 238, 0.394);
+    margin-bottom: 7px;
+    padding: 10px;
+    color: var(--dark-color);
+    text-transform: capitalize;
+  }
+  .ur_package_page .content .request_container {
+    width: 80%;
+    text-align: center;
+  }
+  .ur_package_page .content .request_container h5 {
+    margin-top: 30px;
+  }
+}
+
+@media (min-width: 766px) and (max-width: 991px) {
+  .ur_package_page {
+    background: linear-gradient(
+        rgba(255, 255, 255, 0.7),
+        rgba(255, 255, 255, 0.7)
+      ),
+      url("https://res.cloudinary.com/hapiii/image/upload/v1674419880/HYF/graduation%20project/mqdwgt810mlfvdpaiid8.jpg")
+        no-repeat;
+    background-size: cover;
+  }
+  .ur_package_page .content {
+    width: 100%;
+    margin-left: 0%;
+    padding-top: 30px;
+    padding-bottom: 50px;
+    margin-bottom: 50px;
+  }
+  .ur_package_page .content h1 {
+    margin: 40px auto;
+    width: 70%;
+    font-size: 30px;
+  }
+  .ur_package_page .content h1:after {
+    width: 80px;
+  }
+  .ur_package_page .content .success_msg {
+    width: 70%;
+    font-size: 26px;
+    line-height: 1.5;
+    font-weight: 500;
+  }
+  .ur_package_page .content .delivery_data {
+    width: 70%;
+  }
+  .ur_package_page .content .delivery_data .data_title {
+    font-weight: bold;
+    border-bottom: 1px solid var(--light-gray);
+    border-right: 1px solid var(--light-gray);
+    background-color: rgba(238, 238, 238, 0.394);
+    margin-bottom: 7px;
+    padding: 10px;
+    color: var(--dark-color);
+    text-transform: capitalize;
+  }
+  .ur_package_page .content .request_container {
+    width: 70%;
+    text-align: center;
+  }
+  .ur_package_page .content .request_container h5 {
+    margin-top: 30px;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .ur_package_page .content h1 {
+    font-size: 32px;
+    width: 90%;
+  }
+  .ur_package_page .content h1:after {
+    width: 80px;
+  }
+  .ur_package_page .content .success_msg {
+    width: 80%;
+    font-size: 26px;
+  }
+  .ur_package_page .content .delivery_data {
+    width: 80%;
+  }
+  .ur_package_page .content .delivery_data .data_title {
+    background-color: rgba(176, 174, 174, 0.512);
+  }
+  .ur_package_page .content span.mail {
+    text-transform: none;
+  }
+}

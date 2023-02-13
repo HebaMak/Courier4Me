@@ -1,0 +1,18 @@
+/* @import url("https://fonts.googleapis.com/css2?family=Lobster&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,700;0,800;1,600&family=Roboto:wght@300;400;500;700;900&display=swap");@import url("https://fonts.googleapis.com/css2?family=Lobster&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,700;0,800;1,600&family=Roboto:wght@300;400;500;700;900&display=swap"); */
+* {
+  box-sizing: border-box;
+}
+:root {
+  --orange-color: #d5835b;
+  --olive-color: #454217;
+  --light-green: #6a6c45;
+  --dark-color: #271f14;
+  --light-gray: #94947c;
+  --lighter: #c8c8a9;
+  --light-orange: #edccb3;
+  --success-green: rgb(6, 163, 6);
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}

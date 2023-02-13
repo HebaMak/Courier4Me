@@ -1,0 +1,158 @@
+.request_btn {
+  margin-right: 3px;
+}
+.request_btn,
+.icon_btn {
+  border: 3px solid var(--orange-color);
+  background-color: var(--orange-color);
+  font-weight: 500;
+  padding: 5px 15px;
+  font-size: 20px;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+}
+.request_btn:hover,
+.icon_btn:hover {
+  border: 3px solid var(--dark-color);
+  background-color: transparent;
+  color: var(--dark-color);
+}
+.sign_button {
+  background-color: var(--dark-color);
+  color: #fff;
+  position: absolute;
+  cursor: pointer;
+  letter-spacing: 1px;
+  border: none;
+  width: 140px;
+  padding: 5px;
+}
+.sign_button.disabled {
+  cursor: not-allowed;
+}
+.sign_button::before {
+  content: "";
+  width: 25%;
+  height: 3px;
+  background-color: var(--dark-color);
+  left: 0;
+  top: -5px;
+  position: absolute;
+  transition: all 0.5s ease-in-out;
+}
+.sign_button::after {
+  content: "";
+  width: 25%;
+  height: 3px;
+  background-color: var(--dark-color);
+  right: 0;
+  bottom: -5px;
+  position: absolute;
+  transition: all 0.5s ease-in-out;
+}
+.sign_button:hover::after,
+.sign_button:hover::before {
+  width: 100%;
+}
+.delete_btn {
+  position: relative;
+  border-radius: 0;
+  background-color: red;
+  color: #fff;
+  width: 150px;
+  height: 40px;
+}
+.delete_btn:hover {
+  background-color: red;
+  color: #fff;
+}
+.delete_btn::before {
+  content: "";
+  width: 25%;
+  height: 3px;
+  background-color: red;
+  right: 0;
+  top: -6px;
+  position: absolute;
+  transition: all 0.5s ease-in-out;
+}
+.delete_btn::after {
+  content: "";
+  width: 25%;
+  height: 3px;
+  background-color: red;
+  left: 0;
+  bottom: -6px;
+  position: absolute;
+  transition: all 0.5s ease-in-out;
+}
+.delete_btn:hover::before,
+.delete_btn:hover::after {
+  width: 100%;
+}
+
+/* media query */
+@media (max-width: 300px) {
+  .icon_btn,
+  .request_btn {
+    font-size: 14px;
+    padding: 3px 10px;
+  }
+  .sign_button {
+    width: 80px;
+    font-size: 12px;
+  }
+  .delete_btn {
+    width: 120px;
+    height: 30px;
+    font-size: 13px;
+    line-height: 10px;
+    margin: 30px 0 0;
+  }
+}
+
+@media (min-width: 301px) and (max-width: 575px) {
+  .icon_btn,
+  .request_btn {
+    font-size: 18px;
+    padding: 3px 10px;
+  }
+  .sign_button {
+    width: 100px;
+    font-size: 14px;
+  }
+  .delete_btn {
+    width: 120px;
+    height: 30px;
+    font-size: 13px;
+    line-height: 10px;
+    margin: 30px 0 0;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 765px) {
+  .icon_btn,
+  .request_btn {
+    font-size: 16px;
+    padding: 3px 10px;
+  }
+  .sign_button {
+    width: 120px;
+    font-size: 15px;
+  }
+  .delete_btn {
+    width: 140px;
+    font-size: 16px;
+  }
+}
+
+@media (min-width: 766px) and (max-width: 991px) {
+  .icon_btn,
+  .request_btn {
+    font-size: 18px;
+    padding: 5px 13px;
+  }
+  .sign_button {
+    width: 130px;
+  }
+}

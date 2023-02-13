@@ -1,0 +1,461 @@
+.navbar {
+  background-color: var(--dark-color);
+  color: var(--light-orange);
+  height: 80px;
+}
+.logo-container {
+  width: 25%;
+  flex-basis: 25%;
+}
+.navbar .logo {
+  width: 75px;
+  margin-top: -15px;
+  margin-right: 10px;
+}
+.navbar .navbar-brand {
+  color: #fff;
+  font-family: "Lobster", cursive;
+  letter-spacing: 1px;
+  font-size: 30px;
+  margin-top: 20px;
+}
+.navbar .navbar-nav {
+  width: 73%;
+  flex-basis: 75%;
+  position: absolute;
+  right: 0;
+}
+.navbar-nav .nav-item {
+  margin-right: 40px;
+  font-weight: 500;
+  letter-spacing: 2px;
+  text-decoration: none;
+  transition: all 0.5s ease-in-out;
+  position: relative;
+  font-size: 16px;
+}
+.navbar-nav .nav-item a {
+  padding: 10px 0;
+  width: 100%;
+  display: inline-block;
+}
+.navbar-nav .nav-item a::after {
+  content: "";
+  width: 0;
+  height: 2px;
+  background-color: #fff;
+  position: absolute;
+  bottom: 3px;
+  left: 0;
+  transition: all 0.5s ease-in-out;
+}
+.navbar-brand:hover,
+.navbar-nav .nav-item a.active,
+.navbar-nav .nav-item a:hover {
+  color: #fff;
+}
+.navbar-nav .nav-item a.active::after,
+.navbar-nav .nav-item a:hover::after {
+  background-color: #fff;
+  width: 100%;
+}
+.navbar-nav .nav-item.login {
+  margin-left: 25%;
+}
+.navbar-nav .signout {
+  display: inline-block;
+  position: absolute;
+  right: 0;
+  top: 10px;
+  font-weight: 500;
+  letter-spacing: 2px;
+  transition: all 0.5s ease-in-out;
+  font-size: 16px;
+  text-align: right;
+}
+.navbar-nav .signout .name {
+  display: inline-block;
+  text-transform: capitalize;
+  margin-top: -20px;
+}
+.navbar-nav .name_signout .name img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 7px;
+}
+.navbar-nav .signout .signout_btn {
+  text-transform: capitalize;
+  cursor: pointer;
+  position: relative;
+  margin-left: 20px;
+}
+.navbar-nav .signout .signout_btn:after {
+  content: "";
+  width: 0;
+  height: 2px;
+  background-color: #fff;
+  position: absolute;
+  bottom: -10px;
+  left: 8px;
+  transition: all 0.5s ease-in-out;
+}
+.navbar-nav .signout .signout_btn:hover {
+  color: #fff;
+}
+.navbar-nav .signout .signout_btn:hover::after {
+  width: 90%;
+}
+
+/* media query */
+@media (max-width: 300px) {
+  .logo-container {
+    flex-basis: 80%;
+  }
+  .navbar .logo {
+    width: 50px;
+    margin-top: -9px;
+    margin-right: 5px;
+  }
+  .navbar .navbar-brand {
+    font-size: 20px;
+  }
+  .navbar-toggler {
+    border: 1px solid #fff;
+    position: fixed;
+    right: 5%;
+    color: #fff;
+    width: 35px;
+    height: 30px;
+    padding: 0 3px 2px;
+  }
+  .navbar-toggler-icon {
+    width: 25px;
+    height: 25px;
+  }
+  .navbar .navbar-nav {
+    background-color: #271f14dc;
+    margin-top: 28px;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    text-align: center;
+    padding: 10px 0;
+  }
+  .navbar .navbar-nav.logged {
+    padding: 50px 0 15px;
+  }
+  .navbar-nav .nav-item {
+    width: 100%;
+  }
+  .navbar-nav .nav-item a {
+    padding: 10px 0;
+  }
+  .navbar-nav .nav-item a.active::after,
+  .navbar-nav .nav-item a:hover::after {
+    width: 0;
+  }
+  .navbar-brand:hover,
+  .navbar-nav .nav-item a.active,
+  .navbar-nav .nav-item:hover {
+    background-color: #271f1470;
+  }
+  .navbar-nav .nav-item.login {
+    margin-left: 0;
+  }
+  .navbar-nav .signout {
+    text-align: center;
+    width: 100%;
+    left: 0px;
+    top: 10px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.423);
+  }
+  .navbar-nav .signout.loggedout {
+    border-bottom: 1px solid transparent;
+  }
+  .navbar-nav .signout .name {
+    text-transform: capitalize;
+    margin-right: 20px;
+  }
+  .navbar-nav .name_signout .name img {
+    display: none;
+  }
+  .navbar-nav .signout .signout_btn:hover::after {
+    width: 0;
+  }
+}
+@media (min-width: 301px) and (max-width: 575px) {
+  .logo-container {
+    flex-basis: 75%;
+  }
+  .navbar .logo {
+    width: 60px;
+    margin-top: -11px;
+  }
+  .navbar .navbar-brand {
+    font-size: 24px;
+  }
+  .navbar-toggler {
+    border: 1px solid #fff;
+    position: fixed;
+    right: 5%;
+    color: #fff;
+    width: 40px;
+    height: 35px;
+    padding: 0 5px;
+  }
+  .navbar-toggler-icon {
+    width: 25px;
+    height: 25px;
+  }
+  .navbar .navbar-nav {
+    background-color: #271f14dc;
+    margin-top: 27px;
+    padding: 10px 0;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    text-align: center;
+  }
+  .navbar .navbar-nav.logged {
+    padding: 55px 0 15px;
+  }
+  .navbar-nav .nav-item {
+    width: 100%;
+  }
+  .navbar-nav .nav-item a {
+    padding: 10px 0;
+  }
+  .navbar-nav .nav-item a.active::after,
+  .navbar-nav .nav-item a:hover::after {
+    width: 0;
+  }
+  .navbar-brand:hover,
+  .navbar-nav .nav-item a.active,
+  .navbar-nav .nav-item:hover {
+    background-color: #271f1470;
+  }
+  .navbar-nav .nav-item.login {
+    margin-left: 0;
+  }
+  .navbar-nav .signout {
+    width: 100%;
+    left: 0px;
+    top: 10px;
+    text-align: center;
+    padding-bottom: 7px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.423);
+  }
+  .navbar-nav .signout.loggedout {
+    border-bottom: 1px solid transparent;
+  }
+  .navbar-nav .signout .name {
+    text-transform: capitalize;
+    margin-right: 20px;
+  }
+  .navbar-nav .name_signout .name img {
+    display: none;
+  }
+  .navbar-nav .signout .signout_btn:hover::after {
+    width: 0;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 765px) {
+  .logo-container {
+    flex-basis: 60%;
+  }
+  .navbar .logo {
+    width: 65px;
+  }
+  .navbar-brand {
+    font-size: 28px;
+  }
+  .navbar-toggler {
+    border: 1px solid #fff;
+    position: fixed;
+    right: 10%;
+    color: #fff;
+  }
+  .navbar .navbar-nav {
+    background-color: #271f14dc;
+    padding: 10px 0;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    text-align: center;
+    margin-top: 21px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .navbar .navbar-nav.logged {
+    padding: 50px 0 15px;
+  }
+  .navbar-nav .nav-item {
+    width: 100%;
+  }
+  .navbar-nav .nav-item a {
+    padding: 10px 0;
+  }
+  .navbar-nav .nav-item a.active::after,
+  .navbar-nav .nav-item a:hover::after {
+    width: 0;
+  }
+  .navbar-brand:hover,
+  .navbar-nav .nav-item a.active,
+  .navbar-nav .nav-item:hover {
+    background-color: #271f1470;
+  }
+  .navbar-nav .nav-item.login {
+    margin-left: 0;
+  }
+  .navbar-nav .signout {
+    width: 100%;
+    left: 0px;
+    top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.423);
+  }
+  .navbar-nav .signout.loggedout {
+    border-bottom: 1px solid transparent;
+  }
+  .navbar-nav .signout .name {
+    text-transform: capitalize;
+    margin-right: 30px;
+  }
+  .navbar-nav .name_signout .name img {
+    display: none;
+  }
+  .navbar-nav .signout .signout_btn:hover::after {
+    width: 0;
+  }
+}
+
+@media (min-width: 766px) and (max-width: 991px) {
+  .logo-container {
+    flex-basis: 60%;
+  }
+  .navbar .logo {
+    width: 70px;
+  }
+  .navbar-brand {
+    font-size: 30px;
+  }
+  .navbar-toggler {
+    border: 1px solid #fff;
+    position: fixed;
+    right: 10%;
+    color: #fff;
+  }
+  .navbar .navbar-nav {
+    background-color: #271f14dc;
+    padding: 10px 0;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    text-align: center;
+    margin-top: 21px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .navbar .navbar-nav.logged {
+    padding: 70px 0 15px;
+    border: 1px solid red;
+  }
+  .navbar-nav .nav-item {
+    width: 100%;
+  }
+  .navbar-nav .nav-item a {
+    padding: 10px 0;
+  }
+  .navbar-nav .nav-item a.active::after,
+  .navbar-nav .nav-item a:hover::after {
+    width: 0;
+  }
+  .navbar-brand:hover,
+  .navbar-nav .nav-item a.active,
+  .navbar-nav .nav-item:hover {
+    background-color: #271f1470;
+  }
+  .navbar-nav .nav-item.login {
+    margin-left: 0;
+  }
+  .navbar-nav .signout {
+    width: 100%;
+    left: 0px;
+    top: 10px;
+    text-align: center;
+    padding-bottom: 13px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.423);
+  }
+  .navbar-nav .signout.loggedout {
+    border-bottom: 1px solid transparent;
+  }
+  .navbar-nav .signout .name {
+    text-transform: capitalize;
+    margin-right: 70px;
+  }
+  .navbar-nav .name_signout .name img {
+    display: none;
+  }
+  .navbar-nav .signout .signout_btn:hover::after {
+    width: 0;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .logo-container {
+    flex-basis: 30%;
+  }
+  .navbar .logo {
+    width: 70px;
+  }
+  .navbar-brand {
+    font-size: 28px;
+  }
+  .navbar .navbar-nav {
+    width: 72%;
+    flex-basis: 70%;
+    position: absolute;
+    right: 0;
+  }
+  .navbar-nav .nav-item {
+    margin-right: 25px;
+    font-weight: normal;
+    letter-spacing: 1px;
+    font-size: 16px;
+  }
+  .navbar-nav .nav-item:first-of-type {
+    margin-left: 50px;
+  }
+  .navbar-nav .nav-item.login {
+    margin-left: 15%;
+  }
+  .navbar-nav .signout {
+    width: 40%;
+    text-align: right;
+  }
+  .navbar-nav .name_signout .name img {
+    display: none;
+  }
+  .navbar-nav .signout .name {
+    margin-right: 10px;
+  }
+}
+
+@media (min-width: 1200px) and (max-width: 1399px) {
+  .navbar-nav .nav-item.login {
+    margin-left: 15%;
+  }
+  .navbar-nav .signout {
+    width: 29%;
+  }
+  .navbar-nav .name_signout .name img {
+    display: none;
+  }
+  .navbar-nav .signout .name {
+    margin-right: 10px;
+  }
+}

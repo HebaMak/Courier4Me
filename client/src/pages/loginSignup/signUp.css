@@ -1,0 +1,462 @@
+.signup_container {
+  background: linear-gradient(
+      rgba(255, 255, 255, 0.8),
+      rgba(255, 255, 255, 0.8)
+    ),
+    url("https://res.cloudinary.com/hapiii/image/upload/v1647071507/zgch4apxtyr8mpi9omsc.jpg");
+  background-size: cover;
+  height: calc(100vh - 80px);
+  overflow: hidden;
+}
+.signup_container .content {
+  position: relative;
+  width: 70vw;
+  border: 1px solid var(--lighter);
+  height: 85vh;
+  margin: 15px auto;
+  overflow: scroll;
+  overflow-x: hidden;
+  background-color: rgba(41, 40, 40, 0.058);
+}
+.login_button_container {
+  position: absolute;
+  top: 25px;
+  right: 5%;
+}
+.login_button_container .login_button {
+  display: flex;
+  flex-direction: row-reverse;
+}
+.signup-form {
+  width: 80%;
+  margin: auto;
+}
+.signup-form .form-title {
+  text-align: center;
+  font-size: 40px;
+  padding: 30px 0 10px;
+  margin-bottom: 30px;
+  position: relative;
+}
+.signup-form .form-title:after {
+  content: "";
+  width: 50px;
+  height: 2px;
+  bottom: 0;
+  left: 50%;
+  background-color: var(--orange-color);
+  transform: translateX(-50%);
+  position: absolute;
+}
+.signup-form form {
+  width: 100%;
+}
+.signup-form form .form_content {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.signup-form label {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+.signup-form .form-group {
+  width: 48%;
+  position: relative;
+}
+.signup-form .form-group .AiEye {
+  position: absolute;
+  top: 43%;
+  right: 10px;
+  color: var(--dark-color);
+  width: 20px;
+}
+.signup-form input {
+  width: 100%;
+  margin-bottom: 15px;
+  border: 1px solid var(--lighter);
+  padding: 8px 10px;
+  border-radius: 5px;
+  box-shadow: 3px 3px 0 0 rgb(100, 97, 97);
+  transition: all 0.5s ease-in-out;
+  cursor: pointer;
+}
+.signup-form input::placeholder {
+  color: var(--dark-color);
+  font-size: 12px;
+  font-family: "Lobster", cursive;
+  color: rgb(135, 135, 135);
+  letter-spacing: 2px;
+}
+.signup-form input:focus {
+  background-color: #eee;
+  outline: none;
+}
+.signup-form input:hover {
+  transform: translate(-2px, -2px);
+  box-shadow: 5px 5px 0 0 var(--dark-color);
+  border: 1px solid var(--dark-color);
+}
+.signup-form input[type="checkbox"] {
+  width: 20px;
+  height: 15px;
+  box-shadow: none;
+  margin-bottom: 10px;
+}
+.signup-form input[type="checkbox"]:hover {
+  transform: translate(0, 0);
+}
+.signup-form .label-agree-term {
+  margin-left: 10px;
+}
+.signup-form .reg_msg {
+  position: relative;
+  height: 70px;
+  padding-top: 10px;
+}
+.signup-form .reg_msg .reg_fail {
+  color: var(--dark-color);
+  position: absolute;
+  left: 160px;
+  font-weight: 500;
+  font-size: 18px;
+  color: red;
+  top: 5px;
+}
+.courierExplanation {
+  font-size: 16px !important;
+  font-weight: bold;
+  margin-bottom: 10px !important;
+}
+.signup-form .pass_msg {
+  font-size: 14px;
+}
+.signup-form .asterisk {
+  color: red;
+  font-size: 18px;
+  font-weight: bolder;
+}
+.signup-form .form-checkbox {
+  margin-bottom: 20px;
+  margin-top: -20px;
+}
+
+/* media query */
+@media (max-width: 300px) {
+  .signup_container .content {
+    width: 100vw;
+    height: 100%;
+    margin: 0 auto;
+    border: none;
+  }
+  .login_button_container {
+    top: 15px;
+    right: 6%;
+  }
+  .signup-form {
+    width: 90%;
+  }
+  .signup-form .form-title {
+    font-size: 24px;
+    padding: 50px 0 0;
+    margin-bottom: 15px;
+  }
+  .signup-form .form-title:after {
+    width: 30px;
+    bottom: -7px;
+  }
+  .signup-form form {
+    width: 100%;
+    margin: auto;
+  }
+  .signup-form form .form_content {
+    display: block;
+    margin-bottom: 0px;
+  }
+  .signup-form label {
+    margin-bottom: 0;
+    font-size: 14px;
+  }
+  .signup-form input {
+    width: 100%;
+    margin-bottom: 12px;
+    padding: 4px 8px;
+  }
+  .signup-form input::placeholder {
+    font-size: 10px;
+  }
+  .signup-form input[type="checkbox"] {
+    width: 12px;
+    height: 12px;
+    margin-bottom: 0px;
+  }
+  .signup-form .label-agree-term {
+    margin-left: 3px;
+    font-size: 11px;
+  }
+  .signup-form .form-group {
+    width: 100%;
+  }
+  .signup-form .form-group .AiEye {
+    top: 40%;
+  }
+  .signup-form .reg_msg .reg_fail {
+    top: 55px;
+    display: block;
+    left: 0;
+    font-size: 13px;
+    padding-bottom: 20px;
+  }
+  .signup-form .pass_msg {
+    font-size: 12px;
+    margin: -7px 0 35px 0;
+  }
+  .courierExplanation {
+    font-size: 14px !important;
+    font-weight: 500;
+  }
+}
+
+@media (min-width: 301px) and (max-width: 575px) {
+  .signup_container .content {
+    width: 100vw;
+    height: 100%;
+    margin: 0 auto;
+    border: none;
+  }
+  .login_button_container {
+    top: 15px;
+    right: 6%;
+  }
+  .signup-form {
+    width: 90%;
+    margin: auto;
+  }
+  .signup-form .form-title {
+    font-size: 26px;
+    padding: 55px 0 0px;
+    margin-bottom: 20px;
+  }
+  .signup-form .form-title:after {
+    width: 35px;
+    bottom: -7px;
+  }
+  .signup-form form {
+    width: 92%;
+    margin: auto;
+  }
+  .signup-form form .form_content {
+    display: block;
+    margin-bottom: 10px;
+  }
+  .signup-form label {
+    margin-bottom: 3px;
+    font-size: 16px;
+  }
+  .signup-form input {
+    margin-bottom: 12px;
+    padding: 5px 8px;
+  }
+  .signup-form input::placeholder {
+    font-size: 11px;
+  }
+  .signup-form input[type="checkbox"] {
+    width: 12px;
+    height: 12px;
+  }
+  .signup-form .label-agree-term {
+    margin-left: 7px;
+    font-size: 13px;
+  }
+  .signup-form .form-group {
+    width: 100%;
+  }
+  .signup-form .form-group .AiEye {
+    top: 40%;
+  }
+  .signup-form .reg_msg .reg_fail {
+    top: 60px;
+    left: 0;
+    font-size: 14px;
+    padding-bottom: 25px;
+  }
+  .signup-form .pass_msg {
+    font-size: 13px;
+    margin: -5px 0 35px 0;
+  }
+  .courierExplanation {
+    font-size: 15px !important;
+    font-weight: 500;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 765px) {
+  .signup_container .content {
+    height: 100vh;
+    width: 100vw;
+    border: none;
+    margin: 0 auto;
+    padding: 5px 10px;
+  }
+  .login_button_container {
+    top: 15px;
+    right: 5%;
+  }
+  .signup-form {
+    width: 100%;
+    margin: auto;
+    padding-bottom: 70px;
+    position: relative;
+  }
+  .signup-form .form-title {
+    font-size: 28px;
+    padding: 30px 0 0;
+    margin-bottom: 25px;
+  }
+  .signup-form .form-title:after {
+    width: 37px;
+    bottom: -7px;
+  }
+  .signup-form form {
+    width: 80%;
+    margin: auto;
+  }
+  .signup-form input {
+    margin-bottom: 20px;
+  }
+  .signup-form form .form_content {
+    display: block;
+    margin-bottom: 10px;
+  }
+  .signup-form input[type="checkbox"] {
+    width: 15px;
+    height: 15px;
+  }
+  .signup-form .label-agree-term {
+    margin-left: 7px;
+    font-size: 13px;
+  }
+  .signup-form .form-group {
+    width: 100%;
+  }
+  .signup-form .reg_msg .reg_fail {
+    top: 65px;
+    left: 0;
+    font-size: 16px;
+    padding-bottom: 25px;
+  }
+  .signup-form .pass_msg {
+    margin: -5px 0 35px 0;
+  }
+  .courierExplanation {
+    font-size: 16px !important;
+    font-weight: 500;
+    margin-bottom: 20px !important;
+  }
+}
+
+@media (min-width: 766px) and (max-width: 991px) {
+  .signup_container .content {
+    height: 100vh;
+    width: 100vw;
+    border: none;
+    margin: 0;
+    padding: 20px;
+  }
+  .login_button_container {
+    top: 20px;
+    right: 5%;
+  }
+  .signup-form {
+    width: 90%;
+    margin: auto;
+    padding: 50px 0;
+  }
+  .signup-form .form-title {
+    font-size: 30px;
+    padding: 5px 0 0 0;
+    margin-bottom: 40px;
+  }
+  .signup-form .form-title:after {
+    width: 40px;
+    bottom: -10px;
+  }
+  .signup-form input {
+    margin-bottom: 20px;
+  }
+  .signup-form .agree-term-container {
+    position: relative;
+  }
+  .signup-form .label-agree-term {
+    position: absolute;
+    width: 200%;
+  }
+  .signup-form .reg_msg .reg_fail {
+    top: 5px;
+    left: 150px;
+    font-size: 16px;
+    padding-bottom: 30px;
+  }
+  .signup-form .pass_msg {
+    font-size: 13px;
+    margin: -7px 0 35px 0;
+  }
+  .courierExplanation {
+    font-size: 15px !important;
+    font-weight: 600;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1300px) {
+  .signup_container .content {
+    width: 75vw;
+    height: 80vh;
+    margin: 0px auto;
+    margin-top: 20px;
+    padding: 20px;
+  }
+  .signup-form {
+    width: 90%;
+    margin: auto;
+  }
+  .login_button_container {
+    top: 20px;
+    right: 5%;
+  }
+  .signup-form .form-title {
+    font-size: 36px;
+    padding: 40px 0 25px 0;
+  }
+  .signup-form .form-title:after {
+    width: 45px;
+    bottom: 15px;
+  }
+  .signup-form .agree-term-container {
+    position: relative;
+  }
+  .signup-form .label-agree-term {
+    position: absolute;
+    width: 200%;
+  }
+  .signup-form .reg_msg .reg_fail,
+  .signup-form .reg_msg .reg_success {
+    top: -43px;
+    left: 150px;
+    font-size: 16px;
+  }
+  .signup-form .reg_msg .reg_fail {
+    top: 5px;
+  }
+}
+@media (min-width: 1300px) {
+  .signup-form .agree-term-container {
+    position: relative;
+  }
+  .signup-form .label-agree-term {
+    position: absolute;
+    width: 200%;
+  }
+  .login_button {
+    right: 0;
+  }
+}

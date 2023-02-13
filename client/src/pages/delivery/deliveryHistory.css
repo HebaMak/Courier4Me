@@ -1,0 +1,297 @@
+.deliveries_history {
+  padding-bottom: 20px;
+  position: relative;
+}
+.deliveries_history h4,
+.deliveries_history h5 {
+  text-transform: capitalize;
+  margin-bottom: 50px;
+}
+.deliveries_history .clear_btn_container {
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding: 0;
+}
+.deliveries_history h6 {
+  text-transform: capitalize;
+  margin-bottom: 20px;
+}
+.deliveries_history .deliver_list {
+  margin-bottom: 40px;
+  list-style: square;
+}
+.deliveries_history .deliver_list li {
+  font-size: 20px;
+  margin-bottom: 15px;
+  position: relative;
+}
+.deliveries_history .deliver_list li:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  left: 0;
+  bottom: -2px;
+  background-color: rgb(194, 193, 193);
+}
+.deliveries_history .deliver_list li i {
+  color: red;
+  font-size: 20px;
+  position: absolute;
+  right: 0;
+  bottom: 3px;
+  cursor: pointer;
+}
+.deliveries_history .deliver_list li span {
+  margin: 3px;
+}
+.deliveries_history .deliver_list .del_data {
+  text-transform: capitalize;
+  font-weight: 500;
+}
+.deliveries_history .courier-deliveries {
+  margin-bottom: 10px;
+}
+.deliveries.courier-deliveries h4.title {
+  margin-bottom: 30px;
+  text-transform: capitalize;
+}
+.deliveries_history.pending .buttons_container {
+  display: inline-block;
+}
+.deliveries_history.pending .request_btn {
+  border: 1px solid var(--orange-color);
+  background: var(--light-orange);
+  font-weight: 500;
+  padding: 2px 5px;
+  margin-right: 5px;
+  margin-bottom: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+}
+.deliveries_history.pending .del_data.pending:after {
+  display: none;
+}
+.deliveries_history.pending .request_btn:hover {
+  border: 1px solid var(--dark-color);
+  background-color: transparent;
+  color: var(--dark-color);
+}
+.make_request_again button,
+.google_maps {
+  margin-right: 20px;
+  padding: 3px 10px;
+  border: 1px solid var(--orange-color);
+  background-color: var(--light-orange);
+  margin-top: 10px;
+  transition: all 0.5s ease-in-out;
+}
+
+/* media query */
+@media (max-width: 300px) {
+  .deliveries_history {
+    padding-bottom: 30px;
+  }
+  .deliveries_history .clear_btn_container {
+    right: 12%;
+    top: 0;
+    padding: 0;
+    margin: 20px;
+  }
+  .deliveries.courier-deliveries {
+    text-align: center;
+  }
+  .deliveries.courier-deliveries h4.title,
+  .deliveries_history h4 {
+    font-size: 19px;
+  }
+  .deliveries_history h4,
+  .deliveries_history h5 {
+    text-align: center;
+    font-size: 18px;
+    line-height: 1.5;
+  }
+  .deliveries_history h6.number {
+    margin-top: 80px;
+  }
+  .deliveries_history .deliver_list {
+    text-align: left;
+    padding: 0;
+    width: 90%;
+    margin: 40px auto;
+  }
+  .deliveries_history .deliver_list li {
+    font-size: 14px;
+    margin-bottom: 50px;
+  }
+  .deliveries_history .deliver_list li:after {
+    bottom: -30px;
+  }
+  .deliveries_history .deliver_list li i {
+    bottom: -25px;
+  }
+  .deliveries_history .del_data.pending:after,
+  .deliveries_history .del_data.active:after,
+  .deliveries_history .del_data.passive:after {
+    bottom: -30px;
+  }
+  .deliveries_history .req_btn {
+    left: 10%;
+    position: absolute;
+  }
+  .deliveries_history.pending .buttons_container {
+    display: inline-block;
+  }
+  .deliveries_history.pending .request_btn {
+    font-weight: normal;
+    padding: 1px 2px;
+    margin-bottom: 0px;
+    margin-top: 5px;
+    font-size: 11px;
+  }
+}
+
+@media (min-width: 301px) and (max-width: 575px) {
+  .deliveries_history {
+    text-align: center;
+    padding-bottom: 50px;
+  }
+  .deliveries_history .clear_btn_container {
+    right: 50%;
+    transform: translateX(50%);
+    top: 30px;
+    padding: 0;
+    margin-bottom: 2px;
+  }
+  .deliveries.courier-deliveries {
+    text-align: center;
+  }
+  .deliveries.courier-deliveries,
+  .deliveries_history h4 {
+    font-size: 21px;
+    line-height: 1.5;
+  }
+  .deliveries_history h5 {
+    line-height: 1.5;
+    font-size: 20px;
+  }
+  .deliveries_history h6.number {
+    margin-top: 100px;
+  }
+  .deliveries_history .deliver_list {
+    text-align: left;
+    padding: 0;
+    width: 90%;
+    margin: 40px auto 50px;
+  }
+  .deliveries_history .deliver_list li {
+    font-size: 14px;
+    margin-bottom: 60px;
+  }
+  .deliveries_history .deliver_list li:after {
+    bottom: -35px;
+  }
+  .deliveries_history .deliver_list li i {
+    bottom: -27px;
+  }
+  .deliveries_history .del_data.pending:after,
+  .deliveries_history .del_data.canceled:after,
+  .deliveries_history .del_data.approved:after {
+    bottom: -33px;
+  }
+  .deliveries_history .req_btn {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .deliveries_history.pending .buttons_container {
+    display: block;
+    text-align: right;
+    margin-top: 10px;
+  }
+  .deliveries_history.pending .request_btn {
+    font-weight: normal;
+    padding: 3px 5px;
+    margin-bottom: 0px;
+    margin-top: 7px;
+    font-size: 13px;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 765px) {
+  .deliveries_history h4 {
+    font-size: 22px;
+  }
+  .deliveries_history h6 {
+    margin-bottom: 20px;
+    font-size: 18px;
+  }
+  .deliveries_history .deliver_list {
+    margin: 40px 0 50px;
+  }
+  .deliveries_history .deliver_list li {
+    font-size: 17px;
+    margin-bottom: 25px;
+  }
+  .deliveries_history .deliver_list li:after {
+    bottom: -7px;
+  }
+  .deliveries_history .deliver_list li i {
+    bottom: -3px;
+  }
+  .deliveries_history.pending .request_btn {
+    font-size: 16px;
+    padding: 3px 10px;
+  }
+  .deliveries_history.pending .buttons_container {
+    display: block;
+    text-align: right;
+    margin-top: 10px;
+  }
+  .deliveries_history.pending .request_btn {
+    font-weight: normal;
+    padding: 3px 5px;
+    margin-bottom: 0px;
+    margin-top: 7px;
+    font-size: 13px;
+  }
+}
+
+@media (min-width: 766px) and (max-width: 991px) {
+  .deliveries_history h4 {
+    font-size: 24px;
+  }
+  .deliveries_history h6 {
+    margin-bottom: 20px;
+    font-size: 18px;
+  }
+  .deliveries_history .deliver_list {
+    margin: 40px 0 50px;
+  }
+  .deliveries_history .deliver_list li {
+    font-size: 18px;
+    margin-bottom: 30px;
+  }
+  .deliveries_history .deliver_list li:after {
+    bottom: -10px;
+  }
+  .deliveries_history .deliver_list li i {
+    bottom: -3px;
+  }
+  .deliveries_history .del_data.pending:after,
+  .deliveries_history .del_data.active:after,
+  .deliveries_history .del_data.passive:after {
+    bottom: -7px;
+  }
+  .deliveries_history.pending .buttons_container {
+    display: block;
+    text-align: right;
+    margin-top: 10px;
+  }
+  .deliveries_history.pending .request_btn {
+    margin-bottom: 10px;
+    margin-top: 7px;
+    font-size: 15px;
+  }
+}

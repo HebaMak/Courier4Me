@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  
+  <style>
+.login_container {
+  background: linear-gradient(
+      rgba(255, 255, 255, 0.8),
+      rgba(255, 255, 255, 0.8)
+    ),
+    url("https://res.cloudinary.com/hapiii/image/upload/v1647069686/nstiaosc98y5ypvns3ot.jpg");
+  background-size: cover;
+  height: calc(100vh - 80px);
+  position: relative;
+  overflow: hidden;
+}
+.login_container .content {
+  width: 60vw;
+  height: 75vh;
+  border: 1px solid var(--lighter);
+  padding: 25px;
+  margin: 5vh auto;
+  background-color: rgba(41, 40, 40, 0.058);
+}    
+.login-form {
+  width: 60%;
+  margin: auto;
+}
+.login-form .form-group {
+  width: 100% !important;
+}
+.login-form .form-title {
+  text-align: center;
+  font-size: 40px;
+  padding: 30px 0 20px;
+  position: relative;
+}
+.login-form .form-title:after {
+  content: "";
+  width: 50px;
+  height: 2px;
+  bottom: 10px;
+  left: 50%;
+  background-color: var(--orange-color);
+  transform: translateX(-50%);
+  position: absolute;
+}
+.login-form form,
+.login-form .social-login {
+  width: 80%;
+  margin: auto;
+}
+.login-form label {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+.login-form input {
+  width: 100%;
+  margin-bottom: 25px;
+  border: 1px solid var(--lighter);
+  padding: 8px 10px;
+  border-radius: 5px;
+  box-shadow: 3px 3px 0 0 rgb(100, 97, 97);
+  transition: all 0.5s ease-in-out;
+  cursor: pointer;
+}
+.login-form input::placeholder {
+  color: var(--dark-color);
+  font-size: 14px;
+  font-family: "Lobster", cursive;
+  color: rgb(135, 135, 135);
+  letter-spacing: 2px;
+}
+.login-form input:focus {
+  background-color: #eee;
+  outline: none;
+}
+.login-form input:hover {
+  transform: translate(-2px, -2px);
+  box-shadow: 5px 5px 0 0 var(--dark-color);
+  border: 1px solid var(--dark-color);
+}
+.login-form input[type="checkbox"] {
+  width: 20px;
+  height: 15px;
+  box-shadow: none;
+  margin-bottom: 50px;
+}
+.login-form input[type="checkbox"]:hover {
+  transform: translate(0, 0);
+}
+.login-form .form-group.password {
+  position: relative;
+}
+  </style>
+</head>
+<body>
+    <div class="login_container">
+      <div class="content">
+        <div class="login-form">
+          <h2 class="form-title"> <%= email %> </h2>
+          <form method="post" id="login-form">
+            <div class="form-group form-group-login">
+              <label htmlFor="email">Password</label>
+              <input
+                type="password"
+                name="password"
+                id="password"
+                placeholder="password"
+              />
+            </div>
+
+            <div class="loginBtnContainer">
+              <div
+                class="form-group form-button"
+              >
+              <input type="submit" value="submit" />
+              </div>
+            </div>         
+          </form>
+        </div>
+      </div>
+    </div>
+    <script>
+      var status = '<%- JSON.stringify(status) %>'
+      if(JSON.parse(status) === "verified") {
+        if(confirm("Do you want to login?")) {
+          window.location.href = "https://c39-hyf.herokuapp.com/login"
+        }
+      }   
+  </script>
+</body>
+</html>
