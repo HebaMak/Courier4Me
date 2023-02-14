@@ -19,7 +19,7 @@ const userSchema = new mongoose.Schema({
 });
 
 userSchema.pre("save", async function () {
-  const salt = await bcrypt.genSalt(); // how math should ,
+  const salt = await bcrypt.genSalt();
   this.password = await bcrypt.hash(this.password, salt);
 });
 
@@ -63,12 +63,8 @@ export const validateUser = (userObject) => {
     errorList.push("password is a required field");
   }
 
-  if (typeof userObject.isCourier !== "boolean") {
-    errorList.push("password is a required field");
-  }
-
   if (!validator.isEmail(userObject.email)) {
-    errorList.push("Please enter a valid email");
+    errorList.push("please enter a valid email");
   }
 
   if (
