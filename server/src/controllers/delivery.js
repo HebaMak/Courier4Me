@@ -65,7 +65,7 @@ export const removeDelivery = async (req, res) => {
     res.status(200).json({
       success: true,
       msg: `Delivery with the id: ${req.params.id} has been deleted`,
-      filtered: Delivery,
+      filtered: delivery,
     });
   } catch (error) {
     logError(error);
@@ -124,71 +124,11 @@ export const updateDelivery = async (req, res) => {
       },
       { new: true }
     );
-    res.status(200).json({ success: true, user: updatedDelivery });
+    res.status(200).json({ success: true, delivery: updatedDelivery });
   } catch (err) {
     logError(err);
     res
       .status(500)
       .json({ success: false, msg: "You can update only your account" });
-  }
-};
-
-//find declined deliveries of a courier
-export const pendingDeliveries = async (req, res) => {
-  try {
-    const list = [];
-    const deliveries = await Delivery.find({ courierEmail: req.params.email });
-    deliveries.map((delivery) => {
-      if (delivery.requestStatus === "pending") {
-        list.push(delivery);
-      }
-    });
-    res.status(200).json(list);
-  } catch (error) {
-    logError(error);
-    res.status(500).json({
-      success: false,
-      msg: "Unable to get deliveries, try again later",
-    });
-  }
-};
-
-//find approved deliveries of a courier
-export const approvedDeliveries = async (req, res) => {
-  try {
-    const list = [];
-    const deliveries = await Delivery.find({ courierEmail: req.params.email });
-    deliveries.map((delivery) => {
-      if (delivery.requestStatus === "approved") {
-        list.push(delivery);
-      }
-    });
-    res.status(200).json(list);
-  } catch (error) {
-    logError(error);
-    res.status(500).json({
-      success: false,
-      msg: "Unable to get deliveries, try again later",
-    });
-  }
-};
-
-//find declined deliveries of a courier
-export const declinedDeliveries = async (req, res) => {
-  try {
-    const list = [];
-    const deliveries = await Delivery.find({ courierEmail: req.params.email });
-    deliveries.map((delivery) => {
-      if (delivery.requestStatus === "declined") {
-        list.push(delivery);
-      }
-    });
-    res.status(200).json(list);
-  } catch (error) {
-    logError(error);
-    res.status(500).json({
-      success: false,
-      msg: "Unable to get deliveries, try again later",
-    });
   }
 };
