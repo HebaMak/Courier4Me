@@ -69,7 +69,11 @@ const YourPackage = () => {
 
               <p className="data_title">
                 Additional Comment:
-                <span className="data_info">{state.delivery.comment}</span>
+                <span className="data_info">
+                  {state.delivery.comment
+                    ? state.delivery.comment
+                    : "No comment added"}
+                </span>
               </p>
             </div>
           )}

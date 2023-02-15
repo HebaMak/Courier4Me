@@ -32,7 +32,7 @@ const Delivery = () => {
   const navigate = useNavigate();
   const date = new Date().toDateString();
   const onSuccess = (response) => {
-    navigate("/urpackage", { state: response });
+    navigate("/yourpackage", { state: response });
   };
   const { performFetch, cancelFetch } = useFetch("/delivery/create", onSuccess);
 
