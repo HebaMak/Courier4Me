@@ -2,8 +2,8 @@ import React from "react";
 import { useState, useEffect } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import SignButton from "../../components/buttons/SignButton";
-import { AiFillEyeInvisible, AiFillEye } from "react-icons/ai";
 import useFetch from "../../hooks/useFetch.js";
+import PasswordInput from "./PasswordInput";
 import { Helmet } from "react-helmet";
 import "./signUp.css";
 
@@ -18,11 +18,8 @@ const Signup = () => {
   });
 
   const [isError, setIsError] = useState("");
-  const [confirmPassword, setConfirmPassword] = useState("");
   const [disabled, setDisabled] = useState(true);
   const [agreement, setAgreement] = useState(false);
-  const [passwordEye, setPasswordEye] = useState(false);
-  const [confirmPasswordEye, setConfirmPasswordEye] = useState(false);
   const [isCourier, setIsCourier] = useState(false);
 
   const navigate = useNavigate();
@@ -41,14 +38,6 @@ const Signup = () => {
     return cancelFetch();
   }, []);
 
-  const handlePasswordClick = () => {
-    setPasswordEye(!passwordEye);
-  };
-
-  const handleConfirmPasswordClick = () => {
-    setConfirmPasswordEye(!confirmPasswordEye);
-  };
-
   const handleChange = (e) => {
     user[e.target.id] = e.target.value;
     setUser({ ...user });
@@ -57,7 +46,7 @@ const Signup = () => {
   // some frontend validation
   const checkValidation = (e) => {
     const confPass = e.target.value;
-    setConfirmPassword(confPass);
+    handleChange(e);
     if (user.password !== confPass) {
       setIsError("confirm password should be match with password");
     } else {
@@ -149,45 +138,8 @@ const Signup = () => {
                     onChange={handleChange}
                   />
                 </div>
-                <div className="form-group">
-                  <label htmlFor="pass">
-                    Password <span className="asterisk">*</span>
-                  </label>
-                  <input
-                    type={passwordEye === false ? "password" : "text"}
-                    name="pass"
-                    id="password"
-                    placeholder="Password"
-                    onChange={handleChange}
-                  />
-                  <div className="AiEye">
-                    {passwordEye === false ? (
-                      <AiFillEyeInvisible onClick={handlePasswordClick} />
-                    ) : (
-                      <AiFillEye onClick={handlePasswordClick} />
-                    )}
-                  </div>
-                </div>
-                <div className="form-group">
-                  <label htmlFor="re-pass">Confirm Password</label>
-                  <input
-                    value={confirmPassword}
-                    type={confirmPasswordEye === false ? "password" : "text"}
-                    name="re_pass"
-                    id="re_pass"
-                    placeholder="Repeat your password"
-                    onChange={(e) => checkValidation(e)}
-                  />
-                  <div className="AiEye">
-                    {confirmPasswordEye === false ? (
-                      <AiFillEyeInvisible
-                        onClick={handleConfirmPasswordClick}
-                      />
-                    ) : (
-                      <AiFillEye onClick={handleConfirmPasswordClick} />
-                    )}
-                  </div>
-                </div>
+                <PasswordInput handleChange={handleChange} name="pass" />
+                <PasswordInput handleChange={checkValidation} name="re_pass" />
                 <p className="pass_msg">
                   <span className="asterisk">*</span> Password must contain at
                   least 6 letters and numbers, including at least one capital

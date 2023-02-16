@@ -21,4 +21,5 @@ SignButton.propTypes = {
   disabled: PropTypes.bool,
   handleClick: PropTypes.func,
 };
+
 export default SignButton;

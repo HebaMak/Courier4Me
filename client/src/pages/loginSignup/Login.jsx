@@ -2,9 +2,8 @@ import React, { useState, useContext } from "react";
 import { Link, useNavigate, useLocation } from "react-router-dom";
 import SignButton from "../../components/buttons/SignButton";
 import { AuthContext } from "../../context/AuthContext";
-import { AiFillEyeInvisible, AiFillEye } from "react-icons/ai";
+import PasswordInput from "./PasswordInput";
 import { Helmet } from "react-helmet";
-
 import axios from "axios";
 import "./login.css";
 
@@ -18,7 +17,6 @@ const Login = () => {
     email: userEmail,
     password: "",
   });
-  const [passwordEye, setPasswordEye] = useState(false);
   const [isError, setIsError] = useState(false);
   const { loading, error, dispatch } = useContext(AuthContext);
 
@@ -26,10 +24,6 @@ const Login = () => {
 
   const handleChange = (e) => {
     setCredentials((prev) => ({ ...prev, [e.target.id]: e.target.value }));
-  };
-
-  const handlePasswordClick = () => {
-    setPasswordEye(!passwordEye);
   };
 
   const handleClick = async (e) => {
@@ -70,24 +64,10 @@ const Login = () => {
                 />
               </div>
               <div className="form-group password">
-                <label htmlFor="password">Password:</label>
                 <Link to="/resetpassword" className="forgot-password">
                   forgot password?
                 </Link>
-                <input
-                  type={passwordEye === false ? "password" : "text"}
-                  name="your_pass"
-                  id="password"
-                  placeholder="Password..."
-                  onChange={handleChange}
-                />
-                <div className="AiEye">
-                  {passwordEye === false ? (
-                    <AiFillEyeInvisible onClick={handlePasswordClick} />
-                  ) : (
-                    <AiFillEye onClick={handlePasswordClick} />
-                  )}
-                </div>
+                <PasswordInput handleChange={handleChange} name="your_pass" />
               </div>
               <div className="form-group">
                 <input
