@@ -1,0 +1,336 @@
+.pending-deliveries-container {
+  padding-bottom: 100px;
+}
+.pending-deliveries-container .pending-delivery-title {
+  text-align: center;
+  position: relative;
+  margin: 30px 0 50px;
+}
+.pending-deliveries-container .no_del_msg {
+  text-align: center;
+  text-transform: capitalize;
+  margin-top: 50px;
+}
+.pending-deliveries-container .pending-delivery-title:after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 2px;
+  background-color: var(--orange-color);
+  width: 100px;
+  bottom: -10px;
+}
+.pending-deliveries-container .request-list {
+  margin: 0 auto;
+  width: 80%;
+  height: 72vh;
+  overflow-y: scroll;
+}
+.cusromer_dels_req .request-list .accordion,
+.active-dels-courier .request-list .accordion,
+.pending-deliveries-container .request-list .accordion {
+  margin-bottom: 5px;
+}
+.cusromer_dels_req .request-list .accordion_header_content,
+.active-dels-courier .request-list .accordion_header_content,
+.pending-deliveries-container .request-list .accordion_header_content {
+  display: flex;
+}
+.cusromer_dels_req .request-list .accordion_body_content,
+.active-dels-courier .request-list .accordion_body_content,
+.pending-deliveries-container .request-list .accordion_body_content {
+  display: flex;
+}
+.cusromer_dels_req .request-list .del_title,
+.active-dels-courier .request-list .del_title,
+.pending-deliveries-container .request-list .del_title {
+  font-weight: bold;
+  font-size: 18px;
+}
+.cusromer_dels_req .request-list .del_info,
+.active-dels-courier .request-list .del_info,
+.pending-deliveries-container .request-list .del_info {
+  margin: 0 10px;
+  font-size: 18px;
+}
+table {
+  width: 100%;
+}
+.cusromer_dels_req .request-list tr,
+.active-dels-courier .request-list tr,
+.pending-deliveries-container .request-list tr {
+  border-bottom: 1px solid rgba(221, 217, 217, 0.566);
+  width: 100%;
+}
+.cusromer_dels_req .request-list td,
+.active-dels-courier .request-list td,
+.pending-deliveries-container .request-list td {
+  padding: 10px 0;
+  font-size: 20px;
+}
+.cusromer_dels_req .request-list .del_body_title,
+.active-dels-courier .request-list .del_body_title,
+.pending-deliveries-container .request-list .del_body_title {
+  font-weight: 500;
+}
+.cusromer_dels_req .request-list .del_body_info,
+.active-dels-courier .request-list .del_body_info,
+.pending-deliveries-container .request-list .del_body_info {
+  margin: 0 10px;
+}
+.cusromer_dels_req .request-list .button_container,
+.active-dels-courier .request-list .button_container,
+.pending-deliveries-container .request-list .button_container {
+  padding: 10px 0;
+}
+.cusromer_dels_req .request-list .button_container button,
+.active-dels-courier .request-list .button_container button,
+.pending-deliveries-container .request-list .button_container button {
+  margin-right: 20px;
+  padding: 3px 10px;
+  border: 1px solid var(--orange-color);
+  background-color: var(--light-orange);
+  margin-top: 10px;
+  transition: all 0.5s ease-in-out;
+}
+.cusromer_dels_req .request-list .button_container button.disabled,
+.active-dels-courier .request-list .button_container button.disabled,
+.pending-deliveries-container .request-list .button_container button.disabled {
+  cursor: not-allowed;
+}
+.cusromer_dels_req .request-list .button_container button:hover,
+.active-dels-courier .request-list .button_container button:hover,
+.pending-deliveries-container .request-list .button_container button:hover {
+  background-color: transparent;
+  border-color: #000;
+}
+
+/* media query */
+@media (max-width: 300px) {
+  .pending-delivery-title,
+  .pending-deliveries-container .pending-delivery-title {
+    font-size: 18px;
+    margin: 10px 0 40px;
+    line-height: 1.5;
+  }
+  .pending-deliveries-container .pending-delivery-title:after {
+    width: 60px;
+  }
+  .pending-deliveries-container .no_del_msg {
+    font-size: 20px;
+    margin-top: 10px;
+  }
+  .cusromer_dels_req,
+  .active-dels-courier {
+    width: 130%;
+    margin-left: -15%;
+  }
+  .cusromer_dels_req .request-list,
+  .active-dels-courier .request-list,
+  .pending-deliveries-container .request-list {
+    width: 100%;
+    text-align: left;
+  }
+  .cusromer_dels_req .request-list .accordion_header_content,
+  .active-dels-courier .request-list .accordion_header_content,
+  .pending-deliveries-container .request-list .accordion_header_content {
+    display: block;
+  }
+  .cusromer_dels_req .request-list .accordion_body_content,
+  .active-dels-courier .request-list .accordion_body_content,
+  .pending-deliveries-container .request-list .accordion_body_content {
+    display: block;
+  }
+  .accordion_header_content .header_part {
+    margin-bottom: 10px;
+  }
+  .accordion_body_content .body_part:not(:last-child) {
+    margin-bottom: 10px;
+    border-bottom: 1px solid #eee;
+  }
+  .cusromer_dels_req .request-list .del_title,
+  .active-dels-courier .request-list .del_title,
+  .pending-deliveries-container .request-list .del_title {
+    font-size: 14px;
+  }
+  .cusromer_dels_req .request-list .del_info,
+  .active-dels-courier .request-list .del_info,
+  .pending-deliveries-container .request-list .del_info {
+    font-size: 15px;
+    width: 100% !important;
+  }
+  .cusromer_dels_req .request-list td,
+  .active-dels-courier .request-list td,
+  .pending-deliveries-container .request-list td {
+    font-size: 14px;
+    padding: 0 5px;
+  }
+  .cusromer_dels_req .request-list .button_container,
+  .active-dels-courier .request-list .button_container,
+  .pending-deliveries-container .request-list .button_container {
+    text-align: center;
+  }
+  .cusromer_dels_req .request-list .button_container button,
+  .active-dels-courier .request-list .button_container button,
+  .pending-deliveries-container .request-list .button_container button {
+    font-size: 14px;
+  }
+}
+
+@media (min-width: 301px) and (max-width: 575px) {
+  .pending-delivery-title,
+  .pending-deliveries-container .pending-delivery-title {
+    font-size: 22px;
+    margin: 10px 0 40px;
+    line-height: 1.5;
+  }
+  .pending-deliveries-container .pending-delivery-title:after {
+    width: 70px;
+  }
+  .pending-deliveries-container .no_del_msg {
+    font-size: 22px;
+    margin-top: 10px;
+  }
+  .active-dels-courier {
+    width: 115%;
+    margin-left: -5%;
+  }
+  .cusromer_dels_req .request-list,
+  .active-dels-courier .request-list,
+  .pending-deliveries-container .request-list {
+    width: 95%;
+    text-align: left;
+  }
+  .cusromer_dels_req .request-list .accordion_header_content,
+  .active-dels-courier .request-list .accordion_header_content,
+  .pending-deliveries-container .request-list .accordion_header_content {
+    display: block;
+  }
+  .cusromer_dels_req .request-list .accordion_body_content,
+  .active-dels-courier .request-list .accordion_body_content,
+  .pending-deliveries-container .request-list .accordion_body_content {
+    display: block;
+  }
+  .accordion_header_content .header_part {
+    margin-bottom: 10px;
+  }
+  .accordion_body_content .body_part:not(:last-child) {
+    margin-bottom: 10px;
+    border-bottom: 1px solid #eee;
+  }
+  .cusromer_dels_req .request-list .del_title,
+  .active-dels-courier .request-list .del_title,
+  .pending-deliveries-container .request-list .del_title {
+    font-size: 16px;
+  }
+  .cusromer_dels_req .request-list .del_info,
+  .active-dels-courier .request-list .del_info,
+  .pending-deliveries-container .request-list .del_info {
+    font-size: 17px;
+  }
+  .cusromer_dels_req .request-list td,
+  .active-dels-courier .request-list td,
+  .pending-deliveries-container .request-list td {
+    font-size: 16px;
+  }
+  .cusromer_dels_req .request-list .button_container,
+  .active-dels-courier .request-list .button_container,
+  .pending-deliveries-container .request-list .button_container {
+    text-align: center;
+  }
+  .cusromer_dels_req .request-list .button_container button,
+  .active-dels-courier .request-list .button_container button,
+  .pending-deliveries-container .request-list .button_container button {
+    font-size: 16px;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 765px) {
+  .pending-deliveries-container .pending-delivery-title {
+    font-size: 28px;
+    margin: 10px 0 40px;
+  }
+  .pending-deliveries-container .pending-delivery-title:after {
+    width: 80px;
+  }
+  .pending-deliveries-container .request-list {
+    width: 90%;
+  }
+  .cusromer_dels_req .accordion_header_content,
+  .active-dels-courier .request-list .accordion_header_content,
+  .pending-deliveries-container .request-list .accordion_header_content {
+    display: block;
+  }
+  .cusromer_dels_req .request-list .accordion_body_content,
+  .active-dels-courier .request-list .accordion_body_content,
+  .pending-deliveries-container .request-list .accordion_body_content {
+    display: block;
+  }
+  .accordion_header_content .header_part {
+    margin-bottom: 10px;
+  }
+  .accordion_body_content .body_part:not(:last-child) {
+    margin-bottom: 10px;
+    border-bottom: 1px solid #eee;
+  }
+  .cusromer_dels_req .request-list .del_title,
+  .active-dels-courier .request-list .del_title,
+  .pending-deliveries-container .request-list .del_title {
+    font-size: 17px;
+  }
+  .cusromer_dels_req .request-list .del_info,
+  .active-dels-courier .request-list .del_info,
+  .pending-deliveries-container .request-list .del_info {
+    font-size: 18px;
+  }
+  .cusromer_dels_req .request-list td,
+  .active-dels-courier .request-list td,
+  .pending-deliveries-container .request-list td {
+    font-size: 17px;
+  }
+  .cusromer_dels_req .request-list .button_container button,
+  .active-dels-courier .request-list .button_container button,
+  .pending-deliveries-container .request-list .button_container button {
+    font-size: 17px;
+  }
+}
+
+@media (min-width: 766px) and (max-width: 991px) {
+  .pending-deliveries-container .pending-delivery-title {
+    font-size: 30px;
+  }
+  .pending-deliveries-container .pending-delivery-title:after {
+    width: 80px;
+  }
+  .pending-deliveries-container .request-list {
+    width: 80%;
+  }
+  .cusromer_dels_req .request-list .accordion_header_content,
+  .active-dels-courier .request-list .accordion_header_content,
+  .pending-deliveries-container .request-list .accordion_header_content {
+    display: block;
+  }
+  .cusromer_dels_req .request-list .accordion_body_content,
+  .active-dels-courier .request-list .accordion_body_content,
+  .pending-deliveries-container .request-list .accordion_body_content {
+    display: block;
+  }
+  .accordion_header_content .header_part {
+    margin-bottom: 10px;
+  }
+  .accordion_body_content .body_part:not(:last-child) {
+    margin-bottom: 10px;
+    border-bottom: 1px solid #eee;
+  }
+  .cusromer_dels_req .request-list .del_info,
+  .active-dels-courier .request-list .del_info,
+  .pending-deliveries-container .request-list .del_info {
+    font-size: 18px;
+  }
+  .cusromer_dels_req .request-list td,
+  .active-dels-courier .request-list td,
+  .pending-deliveries-container .request-list td {
+    font-size: 18px;
+  }
+}

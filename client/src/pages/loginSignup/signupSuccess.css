@@ -1,0 +1,63 @@
+/* success register page  */
+.go_to_login_content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.go_to_login_content div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.go_to_login_btn {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.celebration video {
+  height: 520px;
+}
+.confettiText {
+  padding-left: 2.5rem;
+  margin-bottom: 2rem;
+}
+.confettiText h3,
+.confettiText h4 {
+  text-align: center;
+}
+.confettiText div {
+  margin: 2rem 0;
+}
+
+/* media query */
+@media (max-width: 300px) {
+  .go_to_login_content {
+    flex-direction: column;
+  }
+  .confettiText {
+    padding: 0;
+  }
+}
+
+@media (min-width: 301px) and (max-width: 575px) {
+  .go_to_login_content {
+    flex-direction: column;
+  }
+  .confettiText {
+    padding: 0;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 765px) {
+  .go_to_login_content {
+    flex-direction: column;
+  }
+  .confettiText {
+    padding: 0;
+  }
+}
+
+@media (min-width: 766px) and (max-width: 991px) {
+}

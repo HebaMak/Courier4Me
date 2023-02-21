@@ -1,0 +1,788 @@
+.account_page {
+  background: linear-gradient(
+      rgba(255, 255, 255, 0.85),
+      rgba(255, 255, 255, 0.85)
+    ),
+    url("https://res.cloudinary.com/hapiii/image/upload/v1673727474/HYF/graduation%20project/hulqkfzfi3f4846niofx.jpg");
+  background-size: cover;
+  height: 100%;
+  padding: 10px 0 50px;
+}
+.account_page .account_title {
+  background-color: rgba(41, 40, 40, 0.03);
+  padding: 30px 50px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  border: 2px solid transparent;
+  border-bottom-color: rgb(216, 216, 216);
+  border-right-color: rgb(216, 216, 216);
+  position: relative;
+}
+.account_page .delete_btn_container {
+  position: absolute;
+  right: 50px;
+  top: 30px;
+  padding: 0;
+}
+.account_page .profile_image {
+  display: flex;
+}
+.account_page .profile_image .image {
+  flex-basis: 10%;
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  position: relative;
+}
+.account_page .profile_image img {
+  border-radius: 50%;
+  height: 130px;
+  width: 130px;
+  padding: 1px;
+  object-fit: cover;
+  border: 1px solid var(--lighter);
+  background-color: var(--lighter);
+}
+.account_page .profile_image i.open_win {
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  line-height: 25px;
+  border-radius: 50%;
+  color: var(--dark-color);
+  border: 1px solid var(--dark-color);
+  cursor: pointer;
+  position: absolute;
+  left: -20px;
+  bottom: -20px;
+}
+.account_page .upload_win {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(51, 51, 51, 0.831);
+  top: 0;
+  left: 0;
+  z-index: 999999;
+  text-align: center;
+  display: none;
+  padding-top: 100px;
+  transition: all 0.5s ease-in-out;
+}
+.account_page .upload_win.opened {
+  display: block;
+  transition: transition 0.5s ease-in-out;
+}
+.account_page .upload_buttons_container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+.account_page .upload_win .error_message {
+  align-self: center;
+  color: white;
+}
+.account_page .upload_win.opened i.close_win {
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 50%;
+  color: #fff;
+  border: 1px solid #fff;
+  cursor: pointer;
+  position: absolute;
+  top: 80px;
+  right: 27%;
+  padding: 3px;
+  font-size: 26px;
+}
+.account_page .upload_win.opened i.upload_pic {
+  font-size: 26px;
+  border: 1px solid #fff;
+  color: #fff;
+  margin-left: 0;
+  margin-right: 10px;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  line-height: 35px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+}
+.account_page .upload_win.opened i.upload_pic:hover {
+  border: 1px solid #000;
+  color: #000;
+  background-color: #fff;
+}
+.account_page .upload_win.opened img {
+  border: 1px solid #fff;
+  padding: 5px;
+  width: 35vw;
+  height: 55vh;
+  margin-bottom: 20px;
+  background-color: rgba(0, 0, 0, 0.324);
+}
+.account_page .upload_win.opened input {
+  color: #fff;
+  cursor: pointer;
+}
+.account_page .upload_win.opened button {
+  margin-right: 5px;
+  border: 1px solid #fff;
+  transition: all 0.5s ease-in-out;
+}
+.account_page .upload_win.opened button:hover {
+  border: 1px solid #000;
+  color: #000;
+  background: rgba(0, 0, 0, 0.431);
+  color: #fff;
+}
+.account_page .update_img {
+  position: absolute;
+  bottom: -40px;
+  left: 15px;
+  width: 80%;
+  text-align: center;
+  padding: 3px 5px;
+  border: 1px solid var(--dark-color);
+  cursor: pointer;
+}
+.account_page .account_title h3 {
+  flex-basis: 90%;
+  text-transform: capitalize;
+  position: relative;
+  color: var(--dark-color);
+  display: flex;
+  align-items: center;
+}
+.account_page .account_title h3:after {
+  content: "";
+  position: absolute;
+  height: 3px;
+  background-color: var(--orange-color);
+  width: 80px;
+  bottom: 50px;
+  left: 0;
+}
+.account_page .user_info {
+  background-color: rgba(41, 40, 40, 0.03);
+  margin-bottom: 10px;
+  border: 2px solid transparent;
+  border-bottom-color: rgb(216, 216, 216);
+  border-right-color: rgb(216, 216, 216);
+  padding: 30px 50px 50px;
+}
+.account_page .user_info h4,
+.account_page .user_info h5 {
+  text-transform: capitalize;
+  margin-bottom: 30px;
+}
+.account_page .user_info form {
+  width: 80%;
+}
+.account_page .user_info .personal_data {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.account_page .personal_data h5 {
+  width: 100%;
+}
+.account_page .personal_data .form-group {
+  width: 49%;
+  margin-bottom: 20px;
+}
+.account_page .personal_data .form-group label {
+  width: 100%;
+  margin-bottom: 7px;
+  text-transform: capitalize;
+  font-weight: 500;
+}
+.account_page .personal_data .form-group input,
+.account_page .personal_data .form-group.select_box select {
+  width: 80%;
+  padding: 7px 10px;
+  border: 1px solid var(--lighter);
+  box-shadow: 2px 2px 0 0 var(--lighter);
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+}
+.account_page .personal_data .form-group input:hover,
+.account_page .personal_data .form-group.select_box select:hover {
+  box-shadow: 3px 3px 0 0 var(--dark-color);
+  transform: translate(-1px, -1px);
+}
+.account_page .personal_data .form-group input::placeholder {
+  text-transform: capitalize;
+  font-size: 14px;
+  font-family: "Lobster", cursive;
+  color: rgb(135, 135, 135);
+  letter-spacing: 1px;
+}
+.account_page .personal_data .form-group input.email::placeholder {
+  text-transform: none;
+}
+.account_page .personal_data .update_btn {
+  margin-top: 15px;
+  padding: 0;
+  position: relative;
+}
+.account_page .personal_data .update_msg {
+  position: absolute;
+  left: 170px;
+  top: 22px;
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--success-green);
+  width: 150%;
+}
+.account_page .deliveries {
+  background-color: rgba(41, 40, 40, 0.03);
+  border: 2px solid transparent;
+  border-bottom-color: rgb(216, 216, 216);
+  border-right-color: rgb(216, 216, 216);
+  padding: 30px 50px;
+}
+.deliveries.courier-deliveries {
+  margin-bottom: 10px;
+}
+
+/* media query */
+@media (max-width: 300px) {
+  .account_page {
+    background: rgba(41, 40, 40, 0.05);
+    padding-bottom: 20px;
+  }
+  .account_page .account_title {
+    padding: 20px 20px 80px 20px;
+    display: block;
+    text-align: center;
+  }
+  .account_page .delete_btn_container {
+    margin: 20px;
+    right: 20%;
+    top: 160px;
+  }
+  .account_page .profile_image {
+    display: block;
+  }
+  .account_page .profile_image .image {
+    flex-basis: 100%;
+  }
+  .account_page .profile_image img {
+    height: 90px;
+    width: 90px;
+  }
+  .account_page .profile_image i.open_win {
+    bottom: 10px;
+    width: 25px;
+    height: 25px;
+    line-height: 20px;
+    left: 95px;
+    bottom: 5px;
+  }
+  .account_page .upload_win.opened i.close_win {
+    width: 35px;
+    height: 35px;
+    text-align: center;
+    line-height: 28px;
+    top: 55px;
+    right: 15px;
+    font-size: 20px;
+  }
+  .account_page .upload_win.opened i.upload_pic {
+    font-size: 20px;
+    margin-left: 0;
+    margin-right: 10px;
+    width: 30px;
+    height: 30px;
+    line-height: 25px;
+  }
+  .account_page .upload_win.opened img {
+    width: 90vw;
+    height: 30vh;
+    margin-bottom: 20px;
+  }
+  .account_page .upload_win.opened input {
+    display: none;
+  }
+  .account_page .update_img {
+    position: absolute;
+    bottom: -40px;
+    left: 15px;
+    width: 80%;
+    text-align: center;
+    padding: 3px 5px;
+    border: 1px solid var(--dark-color);
+    cursor: pointer;
+  }
+  .account_page .profile_image input {
+    left: 90px;
+  }
+  .account_page .account_title h3 {
+    flex-basis: 100%;
+    line-height: 50px;
+    font-size: 20px;
+  }
+  .account_page .account_title h3:after {
+    width: 60px;
+    bottom: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .account_page .user_info {
+    padding: 20px;
+  }
+  .account_page .user_info h4,
+  .account_page .user_info h5 {
+    margin-bottom: 20px;
+    font-size: 19px;
+    text-align: center;
+  }
+  .account_page .user_info form {
+    width: 100%;
+  }
+  .account_page .user_info .personal_data {
+    display: block;
+  }
+  .account_page .personal_data h5 {
+    width: 100%;
+  }
+  .account_page .personal_data .form-group {
+    width: 100%;
+    margin-bottom: 13px !important;
+  }
+  .account_page .personal_data .form-group label {
+    width: 100%;
+    font-size: 13px;
+    margin-bottom: 5px;
+  }
+  .account_page .personal_data .form-group input,
+  .account_page .personal_data .form-group.select_box select {
+    width: 100%;
+    padding: 5px 10px;
+  }
+  .account_page .personal_data .form-group input:hover,
+  .account_page .personal_data .form-group.select_box select:hover {
+    box-shadow: 3px 3px 0 0 var(--dark-color);
+    transform: translate(-1px, -1px);
+  }
+  .account_page .personal_data .form-group input::placeholder {
+    font-size: 12px;
+  }
+  .account_page .personal_data .update_btn {
+    left: 15%;
+    padding-bottom: 30px;
+    margin-top: 20px;
+  }
+  .account_page .personal_data .update_msg {
+    left: -10px;
+    top: 40px;
+    font-size: 14px;
+    font-weight: 700;
+  }
+  .account_page .deliveries {
+    padding: 20px;
+  }
+}
+
+@media (min-width: 301px) and (max-width: 575px) {
+  .account_page {
+    background: rgba(41, 40, 40, 0.05);
+    padding-bottom: 20px;
+    overflow: hidden;
+  }
+
+  .account_page .upload_win.opened i.close_win {
+    width: 35px;
+    height: 35px;
+    text-align: center;
+    line-height: 28px;
+    top: 55px;
+    right: 15px;
+    font-size: 20px;
+  }
+  .account_page .upload_win.opened i.upload_pic {
+    font-size: 20px;
+    margin-left: 0;
+    margin-right: 10px;
+    width: 30px;
+    height: 30px;
+    line-height: 25px;
+  }
+  .account_page .upload_win.opened img {
+    width: 90vw;
+    height: 30vh;
+    margin-bottom: 20px;
+  }
+  .account_page .upload_win.opened input {
+    display: none;
+  }
+  .account_page .account_title {
+    padding: 20px 20px 80px 20px;
+    display: block;
+    text-align: center;
+  }
+  .account_page .delete_btn_container {
+    margin: 20px;
+    right: 50%;
+    transform: translate(60%);
+    top: 170px;
+  }
+  .account_page .profile_image {
+    display: block;
+  }
+  .account_page .profile_image .image {
+    flex-basis: 100%;
+  }
+  .account_page .profile_image img {
+    height: 100px;
+    width: 100px;
+  }
+  .account_page .profile_image i.open_win {
+    bottom: 10px;
+    width: 25px;
+    height: 25px;
+    line-height: 20px;
+    left: 100px;
+  }
+  .account_page .profile_image input {
+    left: 100px;
+  }
+  .account_page .account_title h3 {
+    flex-basis: 100%;
+    line-height: 50px;
+    font-size: 22px;
+    display: block;
+    text-align: center;
+  }
+  .account_page .account_title h3:after {
+    width: 60px;
+    bottom: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .account_page .user_info {
+    padding: 20px;
+  }
+  .account_page .user_info h4,
+  .account_page .user_info h5 {
+    margin-bottom: 20px;
+    font-size: 20px;
+    text-align: center;
+  }
+  .account_page .user_info form {
+    width: 100%;
+  }
+  .account_page .user_info .personal_data {
+    display: block;
+  }
+  .account_page .personal_data h5 {
+    width: 100%;
+  }
+  .account_page .personal_data .form-group {
+    width: 90%;
+    margin: auto;
+    margin-bottom: 14px !important;
+  }
+  .account_page .personal_data .form-group label {
+    width: 100%;
+    font-size: 13px;
+    margin-bottom: 5px;
+  }
+  .account_page .personal_data .form-group input,
+  .account_page .personal_data .form-group.select_box select {
+    width: 100%;
+    padding: 5px 10px;
+  }
+  .account_page .personal_data .form-group input:hover,
+  .account_page .personal_data .form-group.select_box select:hover {
+    box-shadow: 3px 3px 0 0 var(--dark-color);
+    transform: translate(-1px, -1px);
+  }
+  .account_page .personal_data .form-group input::placeholder {
+    font-size: 12px;
+  }
+  .account_page .personal_data .update_btn {
+    left: 0;
+    padding-bottom: 40px;
+    margin-top: 40px;
+  }
+  .account_page .personal_data .update_msg {
+    left: 120px;
+    top: 10px;
+    font-size: 14px;
+    font-weight: 500;
+    width: 70%;
+  }
+  .account_page .deliveries {
+    padding: 20px;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 765px) {
+  .account_page {
+    background: rgba(41, 40, 40, 0.05);
+    padding-bottom: 20px;
+  }
+
+  .account_page .upload_win.opened i.close_win {
+    width: 35px;
+    height: 35px;
+    text-align: center;
+    line-height: 30px;
+    top: 55px;
+    right: 10%;
+    font-size: 20px;
+  }
+  .account_page .upload_win.opened i.upload_pic {
+    font-size: 20px;
+    margin-left: 0;
+    margin-right: 10px;
+    width: 30px;
+    height: 30px;
+    line-height: 25px;
+  }
+  .account_page .upload_win.opened img {
+    width: 70vw;
+    height: 40vh;
+    margin-bottom: 20px;
+  }
+  .account_page .upload_win.opened input {
+    display: none;
+  }
+  .account_page .account_title {
+    padding: 20px;
+    display: block;
+  }
+  .account_page .delete_btn_container {
+    right: 20px;
+    top: 20px;
+  }
+  .account_page .profile_image {
+    display: block;
+  }
+  .account_page .profile_image .image {
+    flex-basis: 100%;
+  }
+  .account_page .profile_image img {
+    height: 100px;
+    width: 100px;
+  }
+  .account_page .profile_image i.open_win {
+    left: 100px;
+    bottom: 7px;
+  }
+  .account_page .profile_image input {
+    left: 100px;
+  }
+  .account_page .account_title h3 {
+    flex-basis: 100%;
+    line-height: 50px;
+    font-size: 26px;
+  }
+  .account_page .account_title h3:after {
+    width: 70px;
+    bottom: 0px;
+  }
+  .account_page .user_info {
+    padding: 40px 20px 20px;
+  }
+  .account_page .user_info h4,
+  .account_page .user_info h5 {
+    margin-bottom: 30px;
+    font-size: 20px;
+    text-align: center;
+  }
+  .account_page .user_info form {
+    width: 80%;
+    margin: auto;
+  }
+  .account_page .user_info .personal_data {
+    display: block;
+  }
+  .account_page .personal_data h5 {
+    width: 100%;
+  }
+  .account_page .personal_data .form-group {
+    width: 82%;
+    margin-bottom: 17px !important;
+    margin: auto;
+  }
+  .account_page .personal_data .form-group label {
+    width: 100%;
+    font-size: 14px;
+    margin-bottom: 6px;
+  }
+  .account_page .personal_data .form-group input,
+  .account_page .personal_data .form-group.select_box select {
+    width: 100%;
+    padding: 6px 10px;
+  }
+  .account_page .personal_data .form-group input:hover,
+  .account_page .personal_data .form-group.select_box select:hover {
+    box-shadow: 3px 3px 0 0 var(--dark-color);
+    transform: translate(-1px, -1px);
+  }
+  .account_page .personal_data .form-group input::placeholder {
+    font-size: 12px;
+  }
+  .account_page .personal_data .update_btn {
+    padding-bottom: 20px;
+    margin-top: 40px;
+  }
+  .account_page .personal_data .update_msg {
+    left: 130px;
+    top: 10px;
+    font-size: 15px;
+    font-weight: 500;
+  }
+  .account_page .deliveries {
+    padding: 20px;
+  }
+}
+
+@media (min-width: 766px) and (max-width: 991px) {
+  .account_page {
+    padding-bottom: 20px;
+  }
+  .account_page .upload_win.opened i.close_win {
+    width: 35px;
+    height: 35px;
+    text-align: center;
+    line-height: 30px;
+    top: 55px;
+    right: 15%;
+    font-size: 20px;
+  }
+  .account_page .upload_win.opened i.upload_pic {
+    font-size: 20px;
+    margin-left: 0;
+    margin-right: 10px;
+    width: 30px;
+    height: 30px;
+    line-height: 25px;
+  }
+  .account_page .upload_win.opened img {
+    width: 50vw;
+    height: 40vh;
+    margin-bottom: 20px;
+  }
+  .account_page .account_title {
+    padding: 20px;
+    display: block;
+  }
+  .account_page .delete_btn_container {
+    right: 20px;
+    top: 20px;
+  }
+  .account_page .profile_image {
+    display: block;
+  }
+  .account_page .profile_image .image {
+    flex-basis: 100%;
+  }
+  .account_page .profile_image img {
+    height: 100px;
+    width: 100px;
+  }
+  .account_page .profile_image i.open_win {
+    left: 100px;
+    bottom: 10px;
+  }
+  .account_page .profile_image input {
+    left: 100px;
+    bottom: 20px;
+  }
+  .account_page .account_title h3 {
+    flex-basis: 100%;
+    line-height: 50px;
+    font-size: 26px;
+    margin-top: 10px;
+  }
+  .account_page .account_title h3:after {
+    width: 70px;
+    bottom: 0px;
+  }
+  .account_page .user_info {
+    padding: 40px 30px 50px;
+  }
+  .account_page .user_info form {
+    width: 100%;
+  }
+  .account_page .personal_data h5 {
+    margin-bottom: 40px;
+  }
+  .account_page .personal_data .form-group {
+    width: 49%;
+  }
+  .account_page .personal_data .form-group input,
+  .account_page .personal_data .form-group.select_box select {
+    width: 95%;
+  }
+  .account_page .personal_data .form-group input::placeholder {
+    font-size: 13px;
+  }
+  .account_page .personal_data .update_msg {
+    width: 150%;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .account_page {
+    padding-bottom: 30px;
+  }
+  .account_page .upload_win.opened i.close_win {
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 35px;
+    top: 55px;
+    right: 20%;
+    font-size: 22px;
+  }
+  .account_page .upload_win.opened i.upload_pic {
+    font-size: 22px;
+    margin-left: 0;
+    margin-right: 10px;
+    width: 40px;
+    height: 40px;
+    line-height: 35px;
+  }
+  .account_page .upload_win.opened img {
+    width: 50vw;
+    height: 40vh;
+    margin-bottom: 20px;
+  }
+  .account_page .profile_image i.open_win {
+    left: -20px;
+  }
+  .account_page .profile_image input {
+    left: -20px;
+  }
+  .account_page .account_title h3 {
+    margin-left: 20px;
+    flex-basis: 100%;
+    line-height: 100px;
+  }
+  .account_page .personal_data h5 {
+    margin-bottom: 40px;
+  }
+  .account_page .personal_data .form-group input,
+  .account_page .personal_data .form-group.select_box select {
+    width: 90%;
+  }
+  .account_page .personal_data .form-group input::placeholder {
+    font-size: 13px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .account_page .account_title h3 {
+    margin-left: 20px;
+  }
+}

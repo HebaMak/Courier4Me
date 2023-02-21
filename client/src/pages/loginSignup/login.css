@@ -1,0 +1,398 @@
+.login_container {
+  background: linear-gradient(
+      rgba(255, 255, 255, 0.8),
+      rgba(255, 255, 255, 0.8)
+    ),
+    url("https://res.cloudinary.com/hapiii/image/upload/v1647069686/nstiaosc98y5ypvns3ot.jpg");
+  background-size: cover;
+  height: calc(100vh - 80px);
+  position: relative;
+  overflow: hidden;
+}
+.login_container .content {
+  width: 60vw;
+  height: 75vh;
+  border: 1px solid var(--lighter);
+  padding: 25px;
+  margin: 5vh auto;
+  background-color: rgba(41, 40, 40, 0.058);
+}
+.content .register_button {
+  position: absolute;
+  right: 22%;
+  top: 10%;
+  display: flex;
+  flex-direction: row-reverse;
+}
+.login-form {
+  width: 60%;
+  margin: auto;
+}
+.login-form .form-group {
+  width: 100% !important;
+}
+.login-form .form-title {
+  text-align: center;
+  font-size: 40px;
+  padding: 30px 0 20px;
+  position: relative;
+}
+.login-form .form-title:after {
+  content: "";
+  width: 50px;
+  height: 2px;
+  bottom: 10px;
+  left: 50%;
+  background-color: var(--orange-color);
+  transform: translateX(-50%);
+  position: absolute;
+}
+.login-form form,
+.login-form .social-login {
+  width: 80%;
+  margin: auto;
+}
+.login-form label {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+.login-form input {
+  width: 100%;
+  margin-bottom: 25px;
+  border: 1px solid var(--lighter);
+  padding: 8px 10px;
+  border-radius: 5px;
+  box-shadow: 3px 3px 0 0 rgb(100, 97, 97);
+  transition: all 0.5s ease-in-out;
+  cursor: pointer;
+}
+.login-form input::placeholder {
+  font-size: 14px;
+  font-family: "Lobster", cursive;
+  color: rgb(135, 135, 135);
+  letter-spacing: 1px;
+}
+.login-form input:focus {
+  background-color: #eee;
+  outline: none;
+}
+.login-form input:hover {
+  transform: translate(-2px, -2px);
+  box-shadow: 5px 5px 0 0 var(--dark-color);
+  border: 1px solid var(--dark-color);
+}
+.login-form input[type="checkbox"] {
+  width: 20px;
+  height: 15px;
+  box-shadow: none;
+  margin-bottom: 50px;
+}
+.login-form input[type="checkbox"]:hover {
+  transform: translate(0, 0);
+}
+.login-form .form-group.password {
+  position: relative;
+}
+.login-form .AiEye {
+  position: absolute;
+  right: 10px;
+  top: 40%;
+}
+.login-form .label-agree-term {
+  margin-left: 10px;
+}
+.login-form .form-button {
+  margin-bottom: 60px;
+  border: 1px solid transparent;
+}
+.login-form .loginBtnContainer {
+  margin-top: -20px;
+  position: relative;
+  height: 40px;
+  margin-bottom: 20px;
+}
+.login-form .error_msg {
+  height: 0px;
+  position: absolute;
+  top: 10px;
+  left: 160px;
+  text-transform: capitalize;
+  font-weight: 500;
+  color: red;
+  font-size: 20px;
+}
+.login-form .social-login .social-label {
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+.social-login .social-label span {
+  color: var(--olive-color);
+  font-weight: bold;
+}
+.social-login .socials li {
+  display: inline-block;
+  margin-right: 20px;
+}
+.social-login .socials li i {
+  font-size: 28px;
+  font-weight: bold;
+  width: 35px;
+  height: 35px;
+  line-height: 33px;
+  border-radius: 50%;
+  text-align: center;
+  transition: all 0.5s ease-in-out;
+}
+.social-login .socials .zmdi-facebook {
+  color: #1b74e4;
+  border: 1px solid #1b74e4;
+}
+.social-login .socials .zmdi-facebook:hover {
+  color: #fff;
+  background-color: #1b74e4;
+}
+.social-login .socials .zmdi-twitter {
+  color: rgb(9, 235, 235);
+  border: 1px solid rgb(9, 235, 235);
+}
+.social-login .socials .zmdi-twitter:hover {
+  color: #fff;
+  background-color: rgb(9, 235, 235);
+}
+.social-login .socials .zmdi-google {
+  color: red;
+  border: 1px solid red;
+}
+.social-login .socials .zmdi-google:hover {
+  color: #fff;
+  background-color: red;
+}
+.forgot-password {
+  font-size: 11px;
+  position: absolute;
+  right: 0px;
+  top: 10px;
+  font-weight: 600;
+}
+.forgot-password-button {
+  margin-top: 30px;
+}
+
+/* media query */
+@media (max-width: 300px) {
+  .login_container .content {
+    width: 100vw;
+    height: 100vh;
+    padding: 20px 10px;
+    margin: 0 auto;
+    border: none;
+  }
+  .content .register_button {
+    right: 7%;
+    top: 5%;
+  }
+  .login-form {
+    width: 100%;
+  }
+  .login-form .form-title {
+    font-size: 24px;
+    padding: 60px 0 30px;
+  }
+  .login-form .form-title:after {
+    width: 30px;
+    bottom: 20px;
+  }
+  .login-form form .login-form .social-login {
+    width: 94%;
+  }
+  .login-form label {
+    margin-bottom: 0;
+    font-size: 14px;
+  }
+  .login-form input {
+    margin-bottom: 22px;
+    padding: 6px 8px;
+  }
+  .login-form input::placeholder {
+    font-size: 12px;
+  }
+  .login-form input[type="checkbox"] {
+    width: 15px;
+    height: 12px;
+    margin-bottom: 30px;
+  }
+  .login-form .loginBtnContainer {
+    margin-top: -5px;
+  }
+  .login-form .AiEye {
+    top: 37%;
+  }
+  .login-form .error_msg {
+    left: 100px;
+    font-size: 13px;
+  }
+  .social-login .socials li {
+    margin-right: 15px;
+  }
+  .social-login .socials li i {
+    font-size: 17px;
+    width: 25px;
+    height: 25px;
+    line-height: 23px;
+  }
+}
+
+@media (min-width: 301px) and (max-width: 575px) {
+  .login_container .content {
+    width: 100vw;
+    height: 100vh;
+    padding: 20px 10px;
+    margin: 0 auto;
+    border: none;
+  }
+  .content .register_button {
+    right: 7%;
+    top: 3%;
+  }
+  .login-form {
+    width: 90%;
+  }
+  .login-form .form-title {
+    font-size: 26px;
+    padding: 60px 0 30px;
+  }
+  .login-form .form-title:after {
+    width: 35px;
+    bottom: 20px;
+  }
+  .login-form form,
+  .login-form .social-login {
+    width: 92%;
+  }
+  .login-form label {
+    margin-bottom: 3px;
+    font-size: 16px;
+  }
+  .login-form input {
+    padding: 7px 9px;
+  }
+  .login-form input::placeholder {
+    font-size: 13px;
+  }
+  .login-form input[type="checkbox"] {
+    width: 15px;
+    height: 12px;
+    margin-bottom: 30px;
+  }
+  .login-form .loginBtnContainer {
+    margin-top: 0px;
+  }
+  .login-form .AiEye {
+    top: 37%;
+  }
+  .login-form .error_msg {
+    left: 120px;
+    font-size: 16px;
+  }
+  .social-login .socials li {
+    margin-right: 17px;
+  }
+  .social-login .socials li i {
+    font-size: 19px;
+    width: 27px;
+    height: 27px;
+    line-height: 25px;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 765px) {
+  .login_container .content {
+    height: 100vh;
+    width: 100vw;
+    border: none;
+    margin: 0;
+    padding: 25px 10%;
+  }
+  .content .register_button {
+    right: 10%;
+    top: 5%;
+  }
+  .login-form {
+    width: 90%;
+  }
+  .login-form .form-title {
+    font-size: 28px;
+    padding: 50px 0 20px;
+  }
+  .login-form .form-title:after {
+    width: 37px;
+    bottom: 12px;
+  }
+  .social-login .socials li {
+    margin-right: 18px;
+  }
+  .social-login .socials li i {
+    font-size: 21px;
+    width: 30px;
+    height: 30px;
+    line-height: 29px;
+  }
+}
+
+@media (min-width: 766px) and (max-width: 991px) {
+  .login_container .content {
+    padding: 25px 10%;
+    height: 100vh;
+    width: 100vw;
+    border: none;
+    margin: 0;
+  }
+  .content .register_button {
+    right: 10%;
+    top: 5%;
+  }
+  .login-form {
+    width: 85%;
+  }
+  .login-form .form-title {
+    font-size: 30px;
+    padding: 50px 0 20px;
+  }
+  .login-form .form-title:after {
+    width: 40px;
+  }
+  .social-login .socials li i {
+    font-size: 24px;
+    width: 32px;
+    height: 32px;
+    line-height: 30px;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1300px) {
+  .login_container .content {
+    width: 75vw;
+    height: 80vh;
+    padding: 25px;
+    margin: 20px auto;
+    overflow: scroll;
+    overflow-x: hidden;
+  }
+  .content .register_button {
+    right: 17%;
+    top: 7%;
+  }
+  .login-form {
+    width: 75%;
+  }
+  .login-form .form-title {
+    font-size: 36px;
+    padding: 50px 0 20px;
+  }
+  .login-form .form-title:after {
+    width: 45px;
+  }
+  .social-login .socials li i {
+    font-size: 26px;
+  }
+}
