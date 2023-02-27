@@ -13,8 +13,8 @@ import SignupSuccess from "./pages/loginSignup/SignupSuccess";
 import YourPackage from "./pages/delivery/YourPackage";
 import ResetPassword from "./pages/resetpassword/ResetPassword";
 import DeliveryRequests from "./pages/deliveryRequests/DeliveryRequests";
-import PrivateRoutes from "./PrivateRoutes";
 import "./index.css";
+import PrivateRoutes from "./PrivateRoutes";
 
 const App = () => {
   return (
