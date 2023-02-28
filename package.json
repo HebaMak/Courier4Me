@@ -46,8 +46,7 @@
   "homepage": "https://github.com/HackYourFuture/final-project-template#readme",
   "devDependencies": {
     "@types/jest": "^27.0.2",
-    "cypress": "^9.1.0",
-    "husky": "^7.0.0"
+    "cypress": "^9.1.0"
   },
   "dependencies": {
     "bcrypt": "^5.1.0",

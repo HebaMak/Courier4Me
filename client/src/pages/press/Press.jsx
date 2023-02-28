@@ -1,8 +1,8 @@
 import React from "react";
 import { Helmet } from "react-helmet";
 import Footer from "../../components/footer/Footer.jsx";
-import "./press.css";
 import ReactReadMoreReadLess from "react-read-more-read-less";
+import "./press.css";
 
 const Press = () => {
   return (
