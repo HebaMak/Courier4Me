@@ -63,7 +63,7 @@
 
   [![Header](https://res.cloudinary.com/hapiii/image/upload/v1676582781/HYF/graduation%20project/atxtcxu69vhjhozx7rpe.png)](https://some-url.dev/)
   
-  * components 
+  * Components 
     * Navbar: 
       - containing the links to the app pages 
       - containing the user's name, profile pic and a link to the account page if the user is logged in or Login , Signup links if not 
@@ -85,6 +85,11 @@
       [![Header](https://res.cloudinary.com/hapiii/image/upload/v1677675817/HYF/graduation%20project/s7fqzddl6qdrqadc8cl4.jpg)](https://some-url.dev/)
       
     * Error message 
+    
+    [![Header](https://res.cloudinary.com/hapiii/image/upload/v1668878616/Error%20imgs/rixenux81h6bhjl5eq0n.gif)](https://some-url.dev/)
+    
     * Loading message
+    
+    [![Header](https://res.cloudinary.com/hapiii/image/upload/v1674746501/moving%20%20car%2C%20motor/zuc16v0xajvzy3v4fxcl.gif)](https://some-url.dev/)
   
   
