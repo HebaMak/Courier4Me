@@ -2,7 +2,7 @@
 * Courier4Me is a full-stack application
 * The app link on Heroku: https://c39-hyf.herokuapp.com/
 
-[![Header](https://res.cloudinary.com/hapiii/image/upload/v1677681204/HYF/graduation%20project/lykn2vjxfpm8imjlwvsg.gif)](https://some-url.dev/)
+[![Header](https://res.cloudinary.com/hapiii/image/upload/v1677682298/HYF/graduation%20project/lxlr2dy9ivx2n5l8z4bv.gif)](https://some-url.dev/)
 
 * Technologies used: React.js, Express , MongoDB , Bootstrap
 * The app enables the user to register and make an account as a user to send deliveries and packages to others, or as a courier to deliver others deliveries and packages
