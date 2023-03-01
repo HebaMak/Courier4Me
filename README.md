@@ -6,8 +6,8 @@
 * The app consists of some pages and components: 
   * Home page: which displays the app features and direct user to the request page to make a request
   
-[![Header](https://res.cloudinary.com/hapiii/image/upload/v1676582784/HYF/graduation%20project/qfta79auc51flykullwn.png)](https://some-url.dev/)
+  [![Header](https://res.cloudinary.com/hapiii/image/upload/v1676582784/HYF/graduation%20project/qfta79auc51flykullwn.png)](https://some-url.dev/)
 
   * Press Page:
    
-[![Header](https://res.cloudinary.com/hapiii/image/upload/v1676582782/HYF/graduation%20project/atfvcaselijtvix9vf4l.png)](https://some-url.dev/)
+  [![Header](https://res.cloudinary.com/hapiii/image/upload/v1676582782/HYF/graduation%20project/atfvcaselijtvix9vf4l.png)](https://some-url.dev/)
