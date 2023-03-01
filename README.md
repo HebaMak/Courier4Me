@@ -45,7 +45,7 @@
   [![Header](https://res.cloudinary.com/hapiii/image/upload/v1676582780/HYF/graduation%20project/tkmhbznchlvgxc37edcv.jpg)](https://some-url.dev/)
   [![Header](https://res.cloudinary.com/hapiii/image/upload/v1676582781/HYF/graduation%20project/nxug5u39h70fikgjuurw.jpg)](https://some-url.dev/)
   
-  * Your package page: containing the delivery information
+  * Your package page: containing the delivery information and a button to make a new request
   
   [![Header](https://res.cloudinary.com/hapiii/image/upload/v1676582781/HYF/graduation%20project/yuxewjphfw6xj8frupnf.jpg)](https://some-url.dev/)
   
@@ -66,13 +66,15 @@
   * components 
     * Navbar: 
       - containing the links to the app pages 
-      - containing user name and profile pic and link to account page if the user is logged in or Login , Signup links if not 
+      - containing the user's name, profile pic and a link to the account page if the user is logged in or Login , Signup links if not 
+      
       [![Header](https://res.cloudinary.com/hapiii/image/upload/v1677674826/HYF/graduation%20project/ba82rhiat6czmvqakvnm.jpg)](https://some-url.dev/)
       [![Header](https://res.cloudinary.com/hapiii/image/upload/v1677674827/HYF/graduation%20project/fbiks9foljfs0q6woqjh.jpg)](https://some-url.dev/)
       
     * Footer
      - containing the links to the app pages 
-     - containing a link direct to account page if the user is logged in or Signup page links if not 
+     - containing a link directs to the account page if the user is logged in or to the Signup page if not 
+     
       [![Header](https://res.cloudinary.com/hapiii/image/upload/v1677675081/HYF/graduation%20project/n4fm1yk9nbi6wazkr7ko.jpg)](https://some-url.dev/)
       [![Header](https://res.cloudinary.com/hapiii/image/upload/v1677675080/HYF/graduation%20project/tsvs4e4hkzunwq3clfdq.jpg)](https://some-url.dev/)
       
