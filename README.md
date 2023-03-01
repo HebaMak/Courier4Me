@@ -49,7 +49,7 @@
   
   [![Header](https://res.cloudinary.com/hapiii/image/upload/v1676582781/HYF/graduation%20project/yuxewjphfw6xj8frupnf.jpg)](https://some-url.dev/)
   
-  * Login page: enables the user to login and switch to the Register page if user has not an account, 
+  * Login page: enables the user to login and switch to the Sign up page if user has not an account, 
      - if the user foget the password also can reset the password
      - if the user enters a wrong password or email, will get an error message  
 
@@ -62,5 +62,22 @@
     - user have to check agree all terms to click on Register button 
 
   [![Header](https://res.cloudinary.com/hapiii/image/upload/v1676582781/HYF/graduation%20project/atxtcxu69vhjhozx7rpe.png)](https://some-url.dev/)
+  
+  * components 
+    * Navbar: 
+      - containing the links to the app pages 
+      - containing user name and profile pic and link to account page if the user is logged in or Login , Signup links if not 
+      [![Header](https://res.cloudinary.com/hapiii/image/upload/v1677674826/HYF/graduation%20project/ba82rhiat6czmvqakvnm.jpg)](https://some-url.dev/)
+      [![Header](https://res.cloudinary.com/hapiii/image/upload/v1677674827/HYF/graduation%20project/fbiks9foljfs0q6woqjh.jpg)](https://some-url.dev/)
+      
+    * Footer
+     - containing the links to the app pages 
+     - containing a link direct to account page if the user is logged in or Signup page links if not 
+      [![Header](https://res.cloudinary.com/hapiii/image/upload/v1677675081/HYF/graduation%20project/n4fm1yk9nbi6wazkr7ko.jpg)](https://some-url.dev/)
+      [![Header](https://res.cloudinary.com/hapiii/image/upload/v1677675080/HYF/graduation%20project/tsvs4e4hkzunwq3clfdq.jpg)](https://some-url.dev/)
+      
+    * Buttons (Main button, Clear button , Sign button)  
+    * Error message 
+    * Loading message
   
   
