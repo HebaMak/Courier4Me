@@ -21,16 +21,16 @@
    [![Header](https://res.cloudinary.com/hapiii/image/upload/v1676582783/HYF/graduation%20project/j5q2dbl4dfnhhbbrmv0w.png)](https://some-url.dev/)
    
   * Account page: 
-   * containing the user information
-   * containing a link to the page containig all deliveries if the user is a courier
-   * containing all active deliveries the user as a courier choose to deliver from all deliveries page
-   * containing all the deliveries the user request
-   * containing the delivery history of the user with the delivery status delivered or canceled
-   * containing a link to a request page
-   * enables the user to clear the deliverey history or even delete one delivery of them
-   * enables the user to update her/his information
-   * enables the user to upload profile picture which dislpays on the Navbar too
-   * enables the user to delete her/his account with the deliveries and messages she/he made
+   - containing the user information
+   - containing a link to the page containig all deliveries if the user is a courier
+   - containing all active deliveries the user as a courier choose to deliver from all deliveries page
+   - containing all the deliveries the user request
+   - containing the delivery history of the user with the delivery status delivered or canceled
+   - containing a link to a request page
+   - enables the user to clear the deliverey history or even delete one delivery of them
+   - enables the user to update her/his information
+   - enables the user to upload profile picture which dislpays on the Navbar too
+   - enables the user to delete her/his account with the deliveries and messages she/he made
   
    [![Header](https://res.cloudinary.com/hapiii/image/upload/v1676582783/HYF/graduation%20project/b8uinp5hreik4wwog8gu.png)](https://some-url.dev/)
 
