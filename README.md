@@ -78,7 +78,12 @@
       [![Header](https://res.cloudinary.com/hapiii/image/upload/v1677675081/HYF/graduation%20project/n4fm1yk9nbi6wazkr7ko.jpg)](https://some-url.dev/)
       [![Header](https://res.cloudinary.com/hapiii/image/upload/v1677675080/HYF/graduation%20project/tsvs4e4hkzunwq3clfdq.jpg)](https://some-url.dev/)
       
-    * Buttons (Main button, Clear button , Sign button)  
+    * Buttons (Main button, Clear button , Sign button) 
+    
+      [![Header](https://res.cloudinary.com/hapiii/image/upload/v1677675817/HYF/graduation%20project/md0qgdxugdquk1ensbpt.jpg)](https://some-url.dev/)
+      [![Header](https://res.cloudinary.com/hapiii/image/upload/v1677675817/HYF/graduation%20project/lxrxzskyjf51v5mcarwh.jpg)](https://some-url.dev/)
+      [![Header](https://res.cloudinary.com/hapiii/image/upload/v1677675817/HYF/graduation%20project/s7fqzddl6qdrqadc8cl4.jpg)](https://some-url.dev/)
+      
     * Error message 
     * Loading message
   
