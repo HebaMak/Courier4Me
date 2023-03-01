@@ -8,6 +8,10 @@
   
   [![Header](https://res.cloudinary.com/hapiii/image/upload/v1676582784/HYF/graduation%20project/qfta79auc51flykullwn.png)](https://some-url.dev/)
 
-  * Press Page:
+  * Press page: in which some information about us and our parteners
    
   [![Header](https://res.cloudinary.com/hapiii/image/upload/v1676582782/HYF/graduation%20project/atfvcaselijtvix9vf4l.png)](https://some-url.dev/)
+  
+  * FAQ page: in which questions and answersabout how to use the app to make a delivery or cancel it
+
+ [![Header](https://res.cloudinary.com/hapiii/image/upload/v1676582781/HYF/graduation%20project/pdrl58kpdwveysgpa5ux.png)](https://some-url.dev/)
