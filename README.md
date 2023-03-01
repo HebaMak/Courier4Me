@@ -89,7 +89,8 @@
       
     * Error image
     
-    [![Header](https://res.cloudinary.com/hapiii/image/upload/v1668878616/Error%20imgs/rixenux81h6bhjl5eq0n.gif)](https://some-url.dev/)
+    [![Header](https://res.cloudinary.com/hapiii/image/upload/c_crop,h_100,w_100/v1668878616/Error%20imgs/rixenux81h6bhjl5eq0n.gif)](https://some-url.dev/)
+    
     
     * Loading image
     
