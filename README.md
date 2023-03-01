@@ -8,8 +8,8 @@
 * The app enables the user to register and make an account as a user to send deliveries and packages to others, or as a courier to deliver others deliveries and packages
 * The app consists of some pages and components: 
   * Home page: which displays the app features
-    - direct the user to the request page to make a request if the user has an account or to login page if not
-    - direct the user to account if the user has an account or to login page if not 
+    - directs the user to the request page to make a request if the user has an account or to login page if not
+    - directs the user to account if the user has an account or to login page if not 
   
   [![Header](https://res.cloudinary.com/hapiii/image/upload/v1676582784/HYF/graduation%20project/qfta79auc51flykullwn.png)](https://some-url.dev/)
 
