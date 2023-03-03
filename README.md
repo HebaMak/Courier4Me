@@ -4,7 +4,7 @@
 * The app link on Heroku: https://c39-hyf.herokuapp.com/
 * app pages screenshots:
 
-[![Header](https://res.cloudinary.com/hapiii/image/upload//c_scale,w_70%/v1677774226/HYF/graduation%20project/erqfbjx2xkaywu0itxgt.gif)](https://some-url.dev/)
+[![Header](https://res.cloudinary.com/hapiii/image/upload//c_scale,w_700/v1677774226/HYF/graduation%20project/erqfbjx2xkaywu0itxgt.gif)](https://some-url.dev/)
 
 * Technologies used: React.js, Express , MongoDB , Bootstrap
 * The app enables the user to register and make an account as a user to send deliveries and packages to others, or as a courier to deliver others deliveries and packages
