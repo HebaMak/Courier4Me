@@ -8,13 +8,13 @@
 
 * Technologies used: React.js, Express.js , MongoDB , Node.js , Bootstrap , css3, Html5
 
- ![alt text](https://img.shields.io/badge/MogoDB--47A248?style=for-the-badge&logo=MongoDB)
- ![alt text](https://img.shields.io/badge/Express.js--000000?style=for-the-badge&logo=Express)
- ![alt text](https://img.shields.io/badge/React.js--61DAFB?style=for-the-badge&logo=React)
- ![alt text](https://img.shields.io/badge/Node.js--339933?style=for-the-badge&logo=Node.js)
- ![alt text](https://img.shields.io/badge/Css3--1572B6?style=for-the-badge&logo=css3)
- ![alt text](https://img.shields.io/badge/Html5--E34F26?style=for-the-badge&logo=Html5)
- ![alt text](https://img.shields.io/badge/Bootstrap--7952B3?style=for-the-badge&logo=Bootstrap)
+  ![alt text](https://img.shields.io/badge/MogoDB--47A248?style=for-the-badge&logo=MongoDB)
+  ![alt text](https://img.shields.io/badge/Express.js--000000?style=for-the-badge&logo=Express)
+  ![alt text](https://img.shields.io/badge/React.js--61DAFB?style=for-the-badge&logo=React)
+  ![alt text](https://img.shields.io/badge/Node.js--339933?style=for-the-badge&logo=Node.js)
+  ![alt text](https://img.shields.io/badge/Css3--1572B6?style=for-the-badge&logo=css3)
+  ![alt text](https://img.shields.io/badge/Html5--E34F26?style=for-the-badge&logo=Html5)
+  ![alt text](https://img.shields.io/badge/Bootstrap--7952B3?style=for-the-badge&logo=Bootstrap)
  
 
 * The app enables the user to register and make an account as a user to send deliveries and packages to others, or as a courier to deliver others deliveries and packages
