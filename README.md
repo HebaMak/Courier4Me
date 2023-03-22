@@ -6,7 +6,7 @@
 
 [![Header](https://res.cloudinary.com/hapiii/image/upload//c_scale,w_700/v1677774226/HYF/graduation%20project/erqfbjx2xkaywu0itxgt.gif)](https://some-url.dev/)
 
-* Technologies used: React.js, Express.js , MongoDB , Node.js , Bootstrap , css3, Html5
+* Technologies used: React.js, Express.js , MongoDB , Node.js , Bootstrap , Css3, Html5
 
   ![alt text](https://img.shields.io/badge/MogoDB--47A248?style=for-the-badge&logo=MongoDB)
   ![alt text](https://img.shields.io/badge/Express.js--000000?style=for-the-badge&logo=Express)
