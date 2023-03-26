@@ -19,7 +19,7 @@
      
       [![Header](https://res.cloudinary.com/hapiii/image/upload/v1677675081/HYF/graduation%20project/n4fm1yk9nbi6wazkr7ko.jpg)](https://some-url.dev/)
       [![He
-    * Error image
+    * Error ima
     
 
   
