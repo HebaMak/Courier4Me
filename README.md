@@ -11,8 +11,7 @@
     - the user have to enter a new email, and password withrror message
     - if the user not fill all form fields wi
      - containing the links to the app pa
-     - containing a link directs to the account page ife user is logged in or to the Signup page if not 
-     
+     - containing a link directs to the account page i
       [![Header](https://res.cloudinary.comiii/image/upload/v1677675081/HYF/graduation%20project/n4fm1yk9nbi6wazkr7ko.jpg)](https://some-url.dev/)
       [![He
     * Error ima
