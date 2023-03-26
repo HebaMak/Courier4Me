@@ -17,7 +17,7 @@
      - containing the links to the app pa
      - containing a link directs to the account page if the user is logged in or to the Signup page if not 
      
-      [![Header](https://res.cloudinary.com/piii/image/upload/v1677675081/HYF/graduation%20project/n4fm1yk9nbi6wazkr7ko.jpg)](https://some-url.dev/)
+      [![Header](https://res.cloudinary.comiii/image/upload/v1677675081/HYF/graduation%20project/n4fm1yk9nbi6wazkr7ko.jpg)](https://some-url.dev/)
       [![He
     * Error ima
     
