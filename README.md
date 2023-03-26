@@ -1,7 +1,7 @@
 
 
 [![Header](https://res.cloudinary.com/hapiii/image/upload//c_scale,w_700/v1677774226/HYF/graduation%20project/erqfbjx2xkaywu0itxgt.gif)](https://some-url.dev/)
-* Technologies used: React.js, Express.js , 
+* Technoloies used: React.js, Express.js , 
 
     - containing all active deliveries the use
   * Your package page: containing the delivery information and a button to make a new request
