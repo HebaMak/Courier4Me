@@ -7,12 +7,7 @@
     - containing all active deliveries the use
   * Your package page: containing the delivery information and a button to make a new request
   
-  [![Header](https://res.cloudinary.com/hapiii/image/upload/v1676582781/HYF/graduation%20project/yuxewjphfw6xj8frupnf.jpg)](https://some-url.dev/)
-  
-  * Login page: enables the user to login and switch to the Sign up page if user has not an account, 
-     - if the user foget the password also can reset the password
-     - if the user enters a wrong password or email, will get an error message  
-
+  [![Header](https://res.cloudinary.com/hapiii/image/up
   [![Header](https://res.cloudinary.com/hapiii/image/upload/v1676582781/HYF/graduation%20project/yqhbzg3mtardyepvnfbh.png)](https://some-url.dev/)
   
   * Sign up page: enables the user to register and make an account as a user or a courier or both
