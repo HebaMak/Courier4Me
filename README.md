@@ -20,16 +20,7 @@
     - directs the user to the account page if the user has an account or to login page if not 
   
   [![Header](https://res.cloudinary.com/hapiii/image/upload/v1676582784/HYF/graduation%20project/qfta79auc51flykullwn.png)](https://some-url.dev/)
-
-  * Press page: containing some information about the app and the parteners ...etc
-   
-  [![Header](https://res.cloudinary.com/hapiii/image/upload/v1676582782/HYF/graduation%20project/atfvcaselijtvix9vf4l.png)](https://some-url.dev/)
-  
-  * FAQ page: containing some questions and answers about how to use the app to make a delivery or cancel it ...etc
-
-  [![Header](https://res.cloudinary.com/hapiii/image/upload/v1676582781/HYF/graduation%20project/pdrl58kpdwveysgpa5ux.png)](https://some-url.dev/)
- 
-  * Contact page: enables the user to send a message to the backend team
+ackend team
   
    [![Header](https://res.cloudinary.com/hapiii/image/upload/v1676582783/HYF/graduation%20project/j5q2dbl4dfnhhbbrmv0w.png)](https://some-url.dev/)
    
