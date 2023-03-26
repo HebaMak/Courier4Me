@@ -6,8 +6,7 @@
     - containing all active deliveries the use
   * Your package page: containing the delivery information and a button to make a new request
   
-  [![Header](https://res.cloudinary.com/hapiii/image/up
-  [![Header](https://res.cloudinary.com/ and make an account as a user or a courior both
+  [![Header](https://res.cloudinary.cnd make an account as a user or a courior both
     - the user have to enter a new email, and password withrror message
     - if the user not fill all form fields wi
      - containing the links to the app pa
