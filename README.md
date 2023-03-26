@@ -67,17 +67,6 @@
     - if the user not fill all form fields will get an error message 
     - user have to check agree all terms to click on Register button 
 
-  [![Header](https://res.cloudinary.com/hapiii/image/upload/v1676582781/HYF/graduation%20project/atxtcxu69vhjhozx7rpe.png)](https://some-url.dev/)
-  
-  * Components 
-    * Navbar: 
-      - containing the links to the app pages 
-      - containing the user's name, profile pic and a link to the account page if the user is logged in or Login , Signup links if not 
-      
-      [![Header](https://res.cloudinary.com/hapiii/image/upload/v1677674826/HYF/graduation%20project/ba82rhiat6czmvqakvnm.jpg)](https://some-url.dev/)
-      [![Header](https://res.cloudinary.com/hapiii/image/upload/v1677674827/HYF/graduation%20project/fbiks9foljfs0q6woqjh.jpg)](https://some-url.dev/)
-      
-    * Footer
      - containing the links to the app pages 
      - containing a link directs to the account page if the user is logged in or to the Signup page if not 
      
