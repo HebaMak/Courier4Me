@@ -10,8 +10,7 @@
     - if the user nofill all form fields wi
      - containing the links to the app pa
      - containing a link directs to the account page i
-      [![Header](https://res.cloudinary.comiii/image/upload/v1677675081/HYF/graduation%20project/n4fm1yk9nbi6wazkr7ko.jpg)](https://some-url.dev/)
-      [![He
+      [![Header](https://res.cloudinary.c
     * Error ima
     
 
