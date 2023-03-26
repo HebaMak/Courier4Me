@@ -46,18 +46,7 @@
     - containing all the deliveries the user request
     - containing the delivery history of the user with the delivery status delivered or canceled
     - containing a link to a request page
-    - enables the user to clear the deliverey history or even delete one delivery of them
-    - enables the user to update her/his information
-    - enables the user to upload profile picture which dislpays on the Navbar too
-    - enables the user to delete her/his account with the deliveries and messages she/he made
-  
-   [![Header](https://res.cloudinary.com/hapiii/image/upload/v1676582783/HYF/graduation%20project/b8uinp5hreik4wwog8gu.png)](https://some-url.dev/)
-
-  * All Deliveries (Pending Deliveries) page: containing all pending deliveries and user as a courier can select any one of them to deliver
-  
-  [![Header](https://res.cloudinary.com/hapiii/image/upload/v1677670190/HYF/graduation%20project/j9zpwlf4bweuogtgrbky.png)](https://some-url.dev/)
-  
-  * Request page: enables the user to make a request by filling the form and then direct the user to your package page   
+    - enables tuest by filling the form and then direct the user to your package page   
  
   [![Header](https://res.cloudinary.com/hapiii/image/upload/v1676582780/HYF/graduation%20project/tkmhbznchlvgxc37edcv.jpg)](https://some-url.dev/)
   [![Header](https://res.cloudinary.com/hapiii/image/upload/v1676582781/HYF/graduation%20project/nxug5u39h70fikgjuurw.jpg)](https://some-url.dev/)
