@@ -4,15 +4,7 @@
 
 * Technologies used: React.js, Express.js , MongoDB , Node.js , Bootstrap , Css3, Html5
 
-    - containing all active deliveries the user as a courier can choose to deliver from all deliveries page
-    - containing all the deliveries the user request
-    - containing the delivery history of the user with the delivery status delivered or canceled
-    - containing a link to a request page
-    - enables tuest by filling the form and then direct the user to your package page   
- 
-  [![Header](https://res.cloudinary.com/hapiii/image/upload/v1676582780/HYF/graduation%20project/tkmhbznchlvgxc37edcv.jpg)](https://some-url.dev/)
-  [![Header](https://res.cloudinary.com/hapiii/image/upload/v1676582781/HYF/graduation%20project/nxug5u39h70fikgjuurw.jpg)](https://some-url.dev/)
-  
+    - containing all active deliveries the use
   * Your package page: containing the delivery information and a button to make a new request
   
   [![Header](https://res.cloudinary.com/hapiii/image/upload/v1676582781/HYF/graduation%20project/yuxewjphfw6xj8frupnf.jpg)](https://some-url.dev/)
