@@ -9,7 +9,7 @@
   
   [![Header](https://res.cloudinary.com/hapiii/image/up
   [![Header](https://res.cloudinary.com/ and make an account as a user or a courier or both
-    - the user have to enter a new email, and password with at least 6 numbers and characters including at least one uppercase and one lowecase letters
+    - the user have to enter a new email, and password with at least 6umbers and characters including at least one uppercase and one lowecase letters
     - if the user enters a wrong password or email will get  error message
     - if the user not fill all form fields will get an error message 
     - user have to check agree all terms to click on Register button 
