@@ -9,7 +9,7 @@
   [![Header](https://res.cloudinary.cnd make anhrror message
     - if the user nofill all form fields wi
      - containing the links to the app 
-     - containing a link directs to the account page i
+     - containing a link directs to theccount page i
       [![Header](https://res.cloudinary.c
     * Error ima
     
