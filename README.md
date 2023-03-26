@@ -1,11 +1,5 @@
 
 
-## Courier4Me
-* Courier4Me is a full-stack application
-* The app link on Heroku: https://c39-hyf.herokuapp.com/
-* app pages screenshots:
-
-
 [![Header](https://res.cloudinary.com/hapiii/image/upload//c_scale,w_700/v1677774226/HYF/graduation%20project/erqfbjx2xkaywu0itxgt.gif)](https://some-url.dev/)
 
 * Technologies used: React.js, Express.js , MongoDB , Node.js , Bootstrap , Css3, Html5
