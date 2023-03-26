@@ -14,7 +14,7 @@
     - if the user not fill all form fields will get an error message 
     - user have to check agree all terms to click on Register button 
 
-     - containing the links to the app pages 
+     - containing the links to the app pa
      - containing a link directs to the account page if the user is logged in or to the Signup page if not 
      
       [![Header](https://res.cloudinary.com/hapiii/image/upload/v1677675081/HYF/graduation%20project/n4fm1yk9nbi6wazkr7ko.jpg)](https://some-url.dev/)
