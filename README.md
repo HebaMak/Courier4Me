@@ -8,7 +8,7 @@
   * Your package page: containing the delivery information and a button to make a new request
   
   [![Header](https://res.cloudinary.com/hapiii/image/up
-  [![Header](https://res.cloudinary.com/ and make an account as a user or a courier or both
+  [![Header](https://res.cloudinary.com/ and make an account as a user or a courior both
     - the user have to enter a new email, and password with at least 6umbers and characters including at least one uppercase and one lowecase letters
     - if the user enters a wrong password or email will get  error message
     - if the user not fill all form fields will get an error message 
