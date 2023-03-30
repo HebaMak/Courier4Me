@@ -1,7 +1,7 @@
 import React, { useState, useContext } from "react";
 import { Link, useNavigate, useLocation } from "react-router-dom";
 import SignButton from "../../components/buttons/SignButton";
-import { AuthContext } from "../../context/AuthContext";
+import { AuthContext } from "../../hooks/AuthContext";
 import PasswordInput from "./PasswordInput";
 import { Helmet } from "react-helmet";
 import axios from "axios";

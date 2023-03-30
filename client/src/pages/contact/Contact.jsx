@@ -9,7 +9,7 @@ import { GiBrain, GiRaven, GiSmokeBomb } from "react-icons/gi";
 import { AiOutlineMail } from "react-icons/ai";
 import SignButton from "../../components/buttons/SignButton";
 import useFetch from "../../hooks/useFetch.js";
-import { AuthContext } from "../../context/AuthContext";
+import { AuthContext } from "../../hooks/AuthContext";
 import "./contact.css";
 
 const Contact = () => {
@@ -84,7 +84,6 @@ const Contact = () => {
     statusComponent = <div>Sending message...</div>;
   }
   //--------------------------------------------------------
-
 
   return (
     <>

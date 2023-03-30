@@ -1,7 +1,7 @@
 import React, { useState, useContext } from "react";
 import { useNavigate, Link } from "react-router-dom";
 import useFetch from "../../hooks/useFetch";
-import { AuthContext } from "../../context/AuthContext";
+import { AuthContext } from "../../hooks/AuthContext";
 import SignButton from "../../components/buttons/SignButton";
 import MainButton from "../../components/buttons/MainButton";
 import ClearButton from "../../components/buttons/ClearButton";

@@ -1,6 +1,6 @@
 import React, { useEffect, useContext, useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
-import { AuthContext } from "../../context/AuthContext";
+import { AuthContext } from "../../hooks/AuthContext";
 import MainButton from "../../components/buttons/MainButton";
 import ClearButton from "../../components/buttons/ClearButton";
 import axios from "axios";

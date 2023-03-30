@@ -1,7 +1,7 @@
 import React, { useState, useContext, useEffect } from "react";
 import MainButton from "../../components/buttons/MainButton";
 import { useNavigate, useLocation } from "react-router-dom";
-import { AuthContext } from "../../context/AuthContext";
+import { AuthContext } from "../../hooks/AuthContext";
 import useFetch from "../../hooks/useFetch";
 import { Helmet } from "react-helmet";
 import "./delivery.css";

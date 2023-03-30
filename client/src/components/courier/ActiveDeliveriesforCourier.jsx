@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useContext } from "react";
-import { AuthContext } from "../../context/AuthContext";
+import { AuthContext } from "../../hooks/AuthContext";
 import useFetch from "../../hooks/useFetch.js";
 import Accordion from "react-bootstrap/Accordion";
 import { Modal, Button } from "react-bootstrap";

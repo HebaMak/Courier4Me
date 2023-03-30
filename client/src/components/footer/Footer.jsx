@@ -1,7 +1,7 @@
 import React, { useContext } from "react";
 import image from "../../assets/logo.png";
 import { Link } from "react-router-dom";
-import { AuthContext } from "../../context/AuthContext";
+import { AuthContext } from "../../hooks/AuthContext";
 import "./footer.css";
 
 const Footer = () => {

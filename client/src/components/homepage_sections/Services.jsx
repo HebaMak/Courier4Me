@@ -3,7 +3,7 @@ import MainButton from "../buttons/MainButton.jsx";
 import { Link } from "react-router-dom";
 import SenderServices from "./SenderServices";
 import CourierFeatures from "./CourierFeatures";
-import { AuthContext } from "../../context/AuthContext";
+import { AuthContext } from "../../hooks/AuthContext";
 
 const Services = () => {
   const { isLogged } = useContext(AuthContext);
