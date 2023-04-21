@@ -112,6 +112,9 @@
     [![Header](https://res.cloudinary.com/hapiii/image/upload/c_scale,h_300,w_300/v1674746501/moving%20%20car%2C%20motor/zuc16v0xajvzy3v4fxcl.gif)](https://some-url.dev/)
     
 
+   * The app is responsive to all screen sizes
   
+   [![Header](https://res.cloudinary.com/hapiii/image/upload/v1677676432/HYF/graduation%20project/dn2gw5rk2shwickl1hgo.png)](https://some-url.dev/)
+   [![Header](https://res.cloudinary.com/hapiii/image/upload/v1677676431/HYF/graduation%20project/wjqycbifgztqhvjstc0g.png)](https://some-url.dev/)
   
   
