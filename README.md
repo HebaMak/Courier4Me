@@ -19,7 +19,7 @@
  
 
 * The app enables the user to register and make an account as a user to send deliveries and packages to others, or as a courier to deliver others deliveries and packages
-* 
+
 
 * The app consists of some pages and components: 
   * Home page: which displays the app features
