@@ -40,6 +40,7 @@
   
    [![Header](https://res.cloudinary.com/hapiii/image/upload/v1676582783/HYF/graduation%20project/j5q2dbl4dfnhhbbrmv0w.png)](https://some-url.dev/)
    
+   
   * Account page: 
     - containing the user information
     - containing a link to the page containig all deliveries if the user is a courier
