@@ -44,7 +44,7 @@
   
    [![Header](https://res.cloudinary.com/hapiii/image/upload/v1676582783/HYF/graduation%20project/j5q2dbl4dfnhhbbrmv0w.png)](https://some-url.dev/)
    
-   
+     
   * Account page: 
     - containing the user information
     - containing a link to the page containig all deliveries if the user is a courier
@@ -64,6 +64,7 @@
   [![Header](https://res.cloudinary.com/hapiii/image/upload/v1677670190/HYF/graduation%20project/j9zpwlf4bweuogtgrbky.png)](https://some-url.dev/)
   
   * Request page: enables the user to make a request by filling the form and then direct the user to your package page   
+ 
  
   [![Header](https://res.cloudinary.com/hapiii/image/upload/v1676582780/HYF/graduation%20project/tkmhbznchlvgxc37edcv.jpg)](https://some-url.dev/)
   [![Header](https://res.cloudinary.com/hapiii/image/upload/v1676582781/HYF/graduation%20project/nxug5u39h70fikgjuurw.jpg)](https://some-url.dev/)
