@@ -25,6 +25,7 @@
 
 
 * The app consists of some pages and components: 
+* 
   * Home page: which displays the app features
     - directs the user to the request page to make a request if the user has an account or to login page if not
     - directs the user to the account page if the user has an account or to login page if not 
